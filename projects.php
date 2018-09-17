@@ -188,3 +188,8 @@ This Section Will Contain the Product Description
 	</div>
 
 </section>
+<div class="container-fluid">
+ <?php
+include 'footer.php';
+ ?>
+</div>

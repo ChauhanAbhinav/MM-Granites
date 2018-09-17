@@ -5,7 +5,7 @@
 			<span class="mmGranites">MM Granites</span>
 		</div>
 		<div class="nav-bar">
-			<a>Home</a>
+			<a href="index.php">Home</a>
 			<a href="products.php">Products</a>
 			<a href="projects.php">Projects</a>
 			<a>About Us</a>
