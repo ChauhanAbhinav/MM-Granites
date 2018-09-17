@@ -55,3 +55,70 @@ background-color:;
 .active-nav-link{
 	 color: #e75143;
 }
+.footer{
+	background-color: #2f3333;
+	width: 100%;
+	min-height:350px; 
+	color: #999999;
+	text-align: center;
+}
+.inside-footer{
+	/*height: 100%;*/
+	margin:0px;
+}
+.address-block{
+	/*background: red;*/
+	height: 100%;
+	padding: 50px;
+	padding-top: 35px;
+}
+.query-block{
+	/*background: blue;*/
+	height: 100%;
+	padding: 50px;
+	padding-top: 35px;
+	padding-bottom: 5px;
+}
+.social-block{
+	/*background: green;*/
+	height: 100%;
+	padding: 50px;
+	padding-top: 35px;
+}
+.logo-wrapper-footer{
+	display: flex;
+	background-color: ; 
+	justify-content: center;
+  	align-items: center;
+}
+.mmGranites-footer{
+color: #999999;
+}
+.footer-heading{
+color: #999999;
+font-weight: 700;
+font-size:16px;
+}
+.address{
+margin-top: 20px;
+}
+.query-btn{
+	background-color: #e75143;
+	border:none;
+}
+.query-form{
+	padding-top: 35px;
+}
+.copyright{
+	display: inline-block;
+	padding: 5px;
+}
+.social-icon-block{
+	padding: 50px;
+	padding-top: 35px;
+}
+.social-icon{
+	height: 20px;
+	width: 20px;
+	margin:15px;
+}
