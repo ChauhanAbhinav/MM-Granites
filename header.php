@@ -7,7 +7,7 @@
 		<div class="nav-bar">
 			<a>Home</a>
 			<a href="products.php">Products</a>
-			<a>Projects</a>
+			<a href="projects.php">Projects</a>
 			<a>About Us</a>
 			<a>Contact Us</a>
 		</div>

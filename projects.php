@@ -20,14 +20,14 @@ include 'header.php';
 ?>
 
 </div>
-<section style="background-image: url('assets/img/products.jpg');height:150px ">
+<section style="background-image: url('assets/img/projects img.jpg');height:150px ">
 <div class="container-fluid" id="product_banner"> 
 <div class="row">
 <div class="col-sm-3">
-<h1 style="color: white;margin-top:50px">Products</h1>
+<h1 style="color: white;margin-top:50px">Projects</h1>
 
 
-<h5 ><a style="color: white;text-decoration: none" href="index.php">Home /</a><a style="color: white;text-decoration: none" href="#">Products</a></h5>
+<h5 ><a style="color: white;text-decoration: none" href="index.php">Home /</a><a style="color: white;text-decoration: none" href="#">Projects</a></h5>
 </div>
 
 </div>
@@ -39,32 +39,15 @@ include 'header.php';
 <div class="col-sm-12">
 
 <div class="jumbotron">
-<center><h3>Our Products are Our Main Strength</h3></center>
+<center><h3>More of What You Want</h3></center>
 	</div>
 </div>
 </div>
 </div>
 <div class="container-fluid">
 <div class="row">
-<div class="col-sm-6 col-md-3">
-<div class="col-sm-12" style="color:white;background-color: black">
-<center><h3>Type</h3></center>
 
-
-</div>
-<div class="col-sm-12">
-<div class="jumbotron">
-	<ul type="disc">
-		<li>Type 1</li>
-         <li>Type 2</li>
-         <li>Type 3</li>
-         <li>Type 4</li>
-	</ul>
-</div>
-</div>
-
-</div>
-<div class="col-md-9 col-sm-6">
+<div class="col-md-12 col-sm-6">
 <div class="col-md-3 col-sm-6">
 <figure>
 	<img src="assets/img/pro 1.jpg" style="height: 150px">
@@ -129,29 +112,6 @@ This Section Will Contain the Product Description
 
 
 </div>
-
-</div>
-
-	<div class="row">
-<div class="col-sm-6 col-md-3">
-<div class="col-sm-12" style="color:white;background-color: black">
-<center><h3>Color</h3></center>
-
-
-</div>
-<div class="col-sm-12">
-<div class="jumbotron">
-	<ul type="disc">
-		<li>Color 1</li>
-         <li>Color 2</li>
-         <li>Color 3</li>
-         <li>Color 4</li>
-	</ul>
-</div>
-</div>
-
-</div>
-<div class="col-md-9 col-sm-6">
 <div class="col-md-3 col-sm-6">
 <figure>
 	<img src="assets/img/pro 1.jpg" style="height: 150px">
@@ -216,11 +176,8 @@ This Section Will Contain the Product Description
 
 
 </div>
-
 </div>
 
-
-	</div>
 </div>
 <div class="container-fluid">
 <div class="jumbotron">
