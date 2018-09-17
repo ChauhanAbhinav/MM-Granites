@@ -58,4 +58,65 @@ padding-left:40px;
 height: 100%;
 width:100%;
 background-color: rgba(0,0,0,.6);
-}
+ }
+			{
+			
+			}
+			#para1
+			{
+				font-family: cursive;
+				
+			}
+			.readmore
+			{
+				font-family:cursive;
+				font-style:oblique;
+				font-weight: 900;
+			}
+			#readmore1
+			{
+				font-size: 2em;
+				font-family: cursive;
+				
+			}
+			#readmoreecomm
+			{
+				font-size: 2em;
+				font-family: cursive;
+				
+			}
+			
+			
+			#proread3
+			{
+				font-size: 2em;
+				font-family: cursive;
+				
+			}
+			#proread4
+			{
+				font-size: 2em;
+				font-family: cursive;
+				
+			}
+			#wbd1
+			{
+				height: 200px;
+				width: 200px;
+			}
+			#readmore3
+			{
+				display: none;
+			}
+			#readmoreecom
+			{
+				display:none;
+			}
+			#product3
+			{
+				display: none;
+			}
+			#product4
+			{
+				display: none;
+			}
