@@ -1,0 +1,21 @@
+.team-img{
+	height: 350px;
+	width:275px;
+}
+.team-col{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.post-text{
+	font-size: 12px;
+	font-weight: 700;
+}
+.team-about-text{
+	margin-top: -7px;
+}
+.our-mission-text{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-weight:;
+}
