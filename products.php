@@ -38,7 +38,7 @@ include 'header.php';
 <div class="row">
 <div class="col-sm-12">
 
-<div class="jumbotron">
+<div class="jumbotron"  style="margin-left: -15px;margin-right:-15px">
 <center><h3>Our Products are Our Main Strength</h3></center>
 	</div>
 </div>
@@ -53,7 +53,7 @@ include 'header.php';
 
 </div>
 <div class="col-sm-12">
-<div class="jumbotron">
+<div class="jumbotron"  style="margin-left: -15px;margin-right:-15px">
 	<ul type="disc">
 		<li>Type 1</li>
          <li>Type 2</li>
@@ -67,7 +67,7 @@ include 'header.php';
 <div class="col-md-9 col-sm-6">
 <div class="col-md-3 col-sm-6">
 <figure>
-	<img src="assets/img/pro 1.jpg" style="height: 150px">
+	<img src="assets/img/pro 1.jpg" style="height: 150px;width: 100%;">
 <figcaption>
 	<h3>Product Name</h3>
 <p class="text-info">
@@ -83,7 +83,7 @@ This Section Will Contain the Product Description
 </div>
 <div class="col-md-3 col-sm-6">
 <figure>
-	<img src="assets/img/pro 1.jpg" style="height: 150px">
+	<img src="assets/img/pro 2.jpg" style="height: 150px;width: 100%;">
 <figcaption>
 	<h3>Product Name</h3>
 <p class="text-info">
@@ -99,7 +99,7 @@ This Section Will Contain the Product Description
 </div>
 <div class="col-md-3 col-sm-6">
 <figure>
-	<img src="assets/img/pro 1.jpg" style="height: 150px">
+	<img src="assets/img/pro 3.jpg" style="height: 150px;width: 100%">
 <figcaption>
 	<h3>Product Name</h3>
 <p class="text-info">
@@ -115,7 +115,7 @@ This Section Will Contain the Product Description
 </div>
 <div class="col-md-3 col-sm-6">
 <figure>
-	<img src="assets/img/pro 1.jpg" style="height: 150px">
+	<img src="assets/img/pro 4.jpg" style="height: 150px;width: 100%">
 <figcaption>
 	<h3>Product Name</h3>
 <p class="text-info">
@@ -140,7 +140,7 @@ This Section Will Contain the Product Description
 
 </div>
 <div class="col-sm-12">
-<div class="jumbotron">
+<div class="jumbotron" style="margin-left: -15px;margin-right:-15px">
 	<ul type="disc">
 		<li>Color 1</li>
          <li>Color 2</li>
@@ -154,7 +154,7 @@ This Section Will Contain the Product Description
 <div class="col-md-9 col-sm-6">
 <div class="col-md-3 col-sm-6">
 <figure>
-	<img src="assets/img/pro 1.jpg" style="height: 150px">
+	<img src="assets/img/pro 5.jpg" style="height: 150px;width: 100%">
 <figcaption>
 	<h3>Product Name</h3>
 <p class="text-info">
@@ -170,7 +170,7 @@ This Section Will Contain the Product Description
 </div>
 <div class="col-md-3 col-sm-6">
 <figure>
-	<img src="assets/img/pro 1.jpg" style="height: 150px">
+	<img src="assets/img/pro 6.jpg" style="height: 150px;width: 100%">
 <figcaption>
 	<h3>Product Name</h3>
 <p class="text-info">
@@ -186,7 +186,7 @@ This Section Will Contain the Product Description
 </div>
 <div class="col-md-3 col-sm-6">
 <figure>
-	<img src="assets/img/pro 1.jpg" style="height: 150px">
+	<img src="assets/img/pro 3.jpg" style="height: 150px;width: 100%">
 <figcaption>
 	<h3>Product Name</h3>
 <p class="text-info">
@@ -202,7 +202,7 @@ This Section Will Contain the Product Description
 </div>
 <div class="col-md-3 col-sm-6">
 <figure>
-	<img src="assets/img/pro 1.jpg" style="height: 150px">
+	<img src="assets/img/pro 1.jpg" style="height: 150px;width: 100%">
 <figcaption>
 	<h3>Product Name</h3>
 <p class="text-info">
@@ -223,7 +223,7 @@ This Section Will Contain the Product Description
 	</div>
 </div>
 <div class="container-fluid">
-<div class="jumbotron">
+<div class="jumbotron"  style="margin-left: -25px;margin-right:-25px">
 <center>Space for Pagination</center>
 
 </div>
