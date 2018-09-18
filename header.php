@@ -9,7 +9,7 @@
 			<a href="products.php">Products</a>
 			<a href="projects.php">Projects</a>
 			<a>About Us</a>
-			<a>Contact Us</a>
+			<a href="contact.php">Contact Us</a>
 		</div>
 	</div>
 </div>
