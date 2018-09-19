@@ -1,3 +1,30 @@
+<?php 
+ 
+if(isset($_POST['contact_submit']))
+{
+include 'config.php';
+  extract($_POST);
+ 
+  $q1="INSERT INTO `contact`(`id`,`email`,`mobile`,`message`) VALUES ('','".$email."','".$mobile."','".$message."')";
+  $d1=mysqli_query($dbcon,$q1);
+  if(mysqli_affected_rows($dbcon)>0)
+  {
+    echo'<script>
+      alert("Thanks For Your Interest..We will be back to You Soon");
+
+    </script>';
+  }
+  else
+  {
+    echo'<script>
+      alert("Technical Error..Please try after Some time");
+
+    </script>';
+  }
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,17 +73,14 @@ include 'header.php';
 
 	<div class="row">
 		<div class="col-sm-6">
-        <form>
-        	<div class="form-group">
-            <input type="text" name="name" placeholder="Your Name" class="form-control">
+        <form action="#" method="post">
+        	
+            <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" class="form-control" required="">
 
         	</div>
             <div class="form-group">
-            <input type="email" name="email" placeholder="Your Email" class="form-control">
-
-        	</div>
-            <div class="form-group">
-            <input type="number" name="mobile" placeholder="Your Mobile" class="form-control">
+            <input type="number" name="mobile" placeholder="Your Mobile" class="form-control" required="">
 
         	</div>
            <div class="form-group">

@@ -48,134 +48,32 @@ include 'header.php';
 <div class="row">
 
 <div class="col-sm-12">
+	<?php 
+   include 'config.php';
+   $q="SELECT * FROM `projects`";
+   $d=mysqli_query($dbcon,$q);
+   while($res=mysqli_fetch_array($d))
+   {
+
+
+	?>
 <div class=" col-sm-3">
 <figure>
-	<img src="assets/img/pro 1.jpg" style="height: 150px;width: 100%">
+	<img src="admin/<?php echo $res['image'];   ?>" style="height: 150px;width: 100%">
 <figcaption>
-	<h3>Prject Name</h3>
+	<h3><?php echo $res['name'];   ?></h3>
 <p class="text-info">
 
-Project Description
-<br>
-This Section Will Contain the Product Description
+<?php echo $res['description'];   ?>
+
 </p>
 </figcaption>
 </figure>
 
 
 </div>
-<div class="col-md-3 col-sm-6">
-<figure>
-	<img src="assets/img/pro 2.jpg" style="height: 150px;width: 100%">
-<figcaption>
-	<h3>Product Name</h3>
-<p class="text-info">
+<?php  }?>
 
-Project Description
-<br>
-This Section Will Contain the Product Description
-</p>
-</figcaption>
-</figure>
-
-
-</div>
-<div class="col-md-3 col-sm-6">
-<figure>
-	<img src="assets/img/pro 5.jpg" style="height: 150px;width: 100%">
-<figcaption>
-	<h3>Project Name</h3>
-<p class="text-info">
-
-Project Description
-<br>
-This Section Will Contain the Product Description
-</p>
-</figcaption>
-</figure>
-
-
-</div>
-<div class="col-md-3 col-sm-6">
-<figure>
-	<img src="assets/img/pro 3.jpg" style="height: 150px;width: 100%">
-<figcaption>
-	<h3>Product Name</h3>
-<p class="text-info">
-
-Product Description
-<br>
-This Section Will Contain the Product Description
-</p>
-</figcaption>
-</figure>
-
-
-</div>
-<div class="col-md-3 col-sm-6">
-<figure>
-	<img src="assets/img/pro 6.jpg" style="height: 150px;width: 100%">
-<figcaption>
-	<h3>Product Name</h3>
-<p class="text-info">
-
-Product Description
-<br>
-This Section Will Contain the Product Description
-</p>
-</figcaption>
-</figure>
-
-
-</div>
-<div class="col-md-3 col-sm-6">
-<figure>
-	<img src="assets/img/pro 3.jpg" style="height: 150px;width: 100%">
-<figcaption>
-	<h3>Product Name</h3>
-<p class="text-info">
-
-Product Description
-<br>
-This Section Will Contain the Product Description
-</p>
-</figcaption>
-</figure>
-
-
-</div>
-<div class="col-md-3 col-sm-6">
-<figure>
-	<img src="assets/img/pro 2.jpg" style="height: 150px;width: 100%">
-<figcaption>
-	<h3>Product Name</h3>
-<p class="text-info">
-
-Product Description
-<br>
-This Section Will Contain the Product Description
-</p>
-</figcaption>
-</figure>
-
-
-</div>
-<div class="col-md-3 col-sm-6">
-<figure>
-	<img src="assets/img/pro 4.jpg" style="height: 150px;width: 100%">
-<figcaption>
-	<h3>Product Name</h3>
-<p class="text-info">
-
-Product Description
-<br>
-This Section Will Contain the Product Description
-</p>
-</figcaption>
-</figure>
-
-
-</div>
 </div>
 
 </div>

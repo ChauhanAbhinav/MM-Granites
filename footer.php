@@ -1,3 +1,29 @@
+<?php 
+ 
+if(isset($_POST['query-submit']))
+{
+include 'config.php';
+  extract($_POST);
+ 
+  $q1="INSERT INTO `contact`(`id`,`email`,`mobile`,`message`) VALUES ('','".$email."','".$mobile."','".$message."')";
+  $d1=mysqli_query($dbcon,$q1);
+  if(mysqli_affected_rows($dbcon)>0)
+  {
+    echo'<script>
+      alert("Thanks For Your Interest..We will be back to You Soon");
+
+    </script>';
+  }
+  else
+  {
+    echo'<script>
+      alert("Technical Error..Please try after Some time");
+
+    </script>';
+  }
+}
+
+?>
 <div class="footer">
 	<div class="row inside-footer">
 		<div class="col-sm-4 address-block">
@@ -11,9 +37,9 @@
 		</div>
 		<div class="col-sm-4 query-block">
 			<span class="footer-heading">Enquery</span>
-			<form action="#" class="query-form">
+			<form action="#" method="post" class="query-form">
 				<div class="form-group">
-            <input type="number" name="number" class="form-control" placeholder="Enter Mobile No.">
+            <input type="number" name="mobile" class="form-control" placeholder="Enter Mobile No.">
  
 			</div>
 			<div class="form-group">
@@ -21,7 +47,7 @@
  
 			</div>
 			<div class="form-group">
-            <textarea rows="4" cols="20" placeholder="Your Query" name="query" class="form-control">  </textarea>
+            <textarea rows="4" cols="20" placeholder="Your Query" name="message" class="form-control">  </textarea>
   			</div>
 			<div class="form-group">
 				<input type="submit" name="query-submit" class="btn btn-default query-btn">

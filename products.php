@@ -46,181 +46,36 @@ include 'header.php';
 </div>
 <div class="container-fluid">
 <div class="row">
-<div class="col-sm-6 col-md-3">
-<div class="col-sm-12" style="color:white;background-color: black">
-<center><h3>Type</h3></center>
 
-
-</div>
 <div class="col-sm-12">
-<div class="jumbotron"  style="margin-left: -15px;margin-right:-15px">
-	<ul type="disc">
-		<li>Type 1</li>
-         <li>Type 2</li>
-         <li>Type 3</li>
-         <li>Type 4</li>
-	</ul>
-</div>
-</div>
+	<?php 
+   include 'config.php';
+   $q="SELECT * FROM `products`";
+   $d=mysqli_query($dbcon,$q);
+   while($res=mysqli_fetch_array($d))
+   {
 
-</div>
-<div class="col-md-9 col-sm-6">
-<div class="col-md-3 col-sm-6">
+
+	?>
+<div class=" col-sm-3">
 <figure>
-	<img src="assets/img/pro 1.jpg" style="height: 150px;width: 100%;">
+	<img src="admin/<?php echo $res['image'];   ?>" style="height: 150px;width: 100%">
 <figcaption>
-	<h3>Product Name</h3>
+	<h3><?php echo $res['name'];   ?></h3>
 <p class="text-info">
 
-Product Description
-<br>
-This Section Will Contain the Product Description
+<?php echo $res['description'];   ?>
+
 </p>
 </figcaption>
 </figure>
 
 
 </div>
-<div class="col-md-3 col-sm-6">
-<figure>
-	<img src="assets/img/pro 2.jpg" style="height: 150px;width: 100%;">
-<figcaption>
-	<h3>Product Name</h3>
-<p class="text-info">
-
-Product Description
-<br>
-This Section Will Contain the Product Description
-</p>
-</figcaption>
-</figure>
-
-
-</div>
-<div class="col-md-3 col-sm-6">
-<figure>
-	<img src="assets/img/pro 3.jpg" style="height: 150px;width: 100%">
-<figcaption>
-	<h3>Product Name</h3>
-<p class="text-info">
-
-Product Description
-<br>
-This Section Will Contain the Product Description
-</p>
-</figcaption>
-</figure>
-
-
-</div>
-<div class="col-md-3 col-sm-6">
-<figure>
-	<img src="assets/img/pro 4.jpg" style="height: 150px;width: 100%">
-<figcaption>
-	<h3>Product Name</h3>
-<p class="text-info">
-
-Product Description
-<br>
-This Section Will Contain the Product Description
-</p>
-</figcaption>
-</figure>
-
+<?php  }?>
 
 </div>
 
-</div>
-
-	<div class="row">
-<div class="col-sm-6 col-md-3">
-<div class="col-sm-12" style="color:white;background-color: black">
-<center><h3>Color</h3></center>
-
-
-</div>
-<div class="col-sm-12">
-<div class="jumbotron" style="margin-left: -15px;margin-right:-15px">
-	<ul type="disc">
-		<li>Color 1</li>
-         <li>Color 2</li>
-         <li>Color 3</li>
-         <li>Color 4</li>
-	</ul>
-</div>
-</div>
-
-</div>
-<div class="col-md-9 col-sm-6">
-<div class="col-md-3 col-sm-6">
-<figure>
-	<img src="assets/img/pro 5.jpg" style="height: 150px;width: 100%">
-<figcaption>
-	<h3>Product Name</h3>
-<p class="text-info">
-
-Product Description
-<br>
-This Section Will Contain the Product Description
-</p>
-</figcaption>
-</figure>
-
-
-</div>
-<div class="col-md-3 col-sm-6">
-<figure>
-	<img src="assets/img/pro 6.jpg" style="height: 150px;width: 100%">
-<figcaption>
-	<h3>Product Name</h3>
-<p class="text-info">
-
-Product Description
-<br>
-This Section Will Contain the Product Description
-</p>
-</figcaption>
-</figure>
-
-
-</div>
-<div class="col-md-3 col-sm-6">
-<figure>
-	<img src="assets/img/pro 3.jpg" style="height: 150px;width: 100%">
-<figcaption>
-	<h3>Product Name</h3>
-<p class="text-info">
-
-Product Description
-<br>
-This Section Will Contain the Product Description
-</p>
-</figcaption>
-</figure>
-
-
-</div>
-<div class="col-md-3 col-sm-6">
-<figure>
-	<img src="assets/img/pro 1.jpg" style="height: 150px;width: 100%">
-<figcaption>
-	<h3>Product Name</h3>
-<p class="text-info">
-
-Product Description
-<br>
-This Section Will Contain the Product Description
-</p>
-</figcaption>
-</figure>
-
-
-</div>
-
-</div>
-
-
-	</div>
 </div>
 <div class="container-fluid">
 <div class="jumbotron"  style="margin-left: -25px;margin-right:-25px">

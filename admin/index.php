@@ -44,9 +44,28 @@ if(isset($_POST['login']))
     <link href="build/css/custom.min.css" rel="stylesheet">
   </head>
 
-  <body class="login" style="background-color:black">
+  <body class="login" style="background-color:#2A3F54">
    <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12" style="background-color: #EDEDED;">
+      
+<div class="col-sm-12">
+<div class="right_col" role="main" >
+          <!-- top tiles -->
+     <div class="col-md-12" style="margin-left:30%;">
+           <div class="profile_pic">
+             <img src="../assets/img/logo-32.png" style="height:100px;margin-left: 150px" alt="..." class=" profile_img">
+       </div>
+         </div>
+     <div class="col-md-12" style="text-align: center;">
+       <h1 style="font-size:55px;"><b style="text-transform: uppercase">MM Granites</b>, Admin Login</h1>
+      </div>
+     </div>
+</div>
+       </div>
+    </div>
  <div class="row">
+
 <div class="col-sm-4 col-md-4 col-lg-4">
 
 </div>
