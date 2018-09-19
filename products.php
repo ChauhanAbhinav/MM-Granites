@@ -56,14 +56,16 @@ include 'header.php';
 
 
 	?>
+<a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
+
 <div class=" col-sm-3">
 <figure>
 	<img src="admin/<?php echo $res['image'];   ?>" style="height: 150px;width: 100%">
 <figcaption>
 	<h3><?php echo $res['name'];   ?></h3>
-<p class="text-info">
+<p >
 
-<?php echo $res['description'];   ?>
+<?php echo $res['brief'];   ?>
 
 </p>
 </figcaption>
@@ -71,6 +73,7 @@ include 'header.php';
 
 
 </div>
+</a>
 <?php  }?>
 
 </div>

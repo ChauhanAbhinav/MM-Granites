@@ -1,3 +1,15 @@
+<?php 
+$did=$_GET['prod_id'];
+include 'config.php';
+
+$query="SELECT * FROM `products` WHERE `id`='".$did."' ";
+$data=mysqli_query($dbcon,$query);
+$res2=mysqli_fetch_array($data);
+
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -43,22 +55,26 @@ include 'header.php';
 </section>
 
 <section style="margin-top: 20px;">	
-<div class="container-fluid">
+<div class="container">
 <div class="row">
-<div class="col-sm-4">
+<div class="col-sm-6">
+<figure>
+	<img src="admin/<?php echo $res2['image'] ?>" style="width: 100%">
 
+</figure>
 
 
 </div>
-<div class="col-sm-8">
+<div class="col-sm-6">
+<h2><?php echo $res2['name'] ?></h2>
+<br>
+<p>
+	<?php echo $res2['description'] ?>
+</p>
+</div>
 
 </div>
-<div class="container-fluid">
-	<div class="jumbo">
-	<center>Space for Pagination</center>
-	</div>
 </div>
-
 </section>
  <?php
 include 'footer.php';
