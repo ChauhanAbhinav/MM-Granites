@@ -38,7 +38,7 @@ include 'header.php';
 <div class="row">
 <div class="col-sm-12">
 
-<div class="jumbotron" style="margin-left: -15px;margin-right:-15px">
+<div class="jumbo" >
 <center><h3>More of What You Want</h3></center>
 	</div>
 </div>
@@ -65,7 +65,8 @@ include 'header.php';
 <p class="text-info">
 
 <?php echo $res['description'];   ?>
-
+<br>
+<br>
 </p>
 </figcaption>
 </figure>
@@ -78,11 +79,16 @@ include 'header.php';
 
 </div>
 <div class="container-fluid">
-<div class="jumbotron"style="margin-left: -25px;margin-right:-25px"  >
+<div class="row">
+<div class="col-sm-12">
+<div class="jumbo" >
 <center>Space for Pagination</center>
 
 </div>
 
+
+</div>
+</div>
 	</div>
 
 </section>

@@ -1,3 +1,5 @@
+
+
 <?php
 
 session_start();
@@ -21,15 +23,15 @@ if($_SESSION['sid']=="")
         <!-- page content -->
         <div class="right_col" role="main" >
           <!-- top tiles -->
-		 <div class="col-md-12" style="margin-left:30%;">
+     <div class="col-md-12" style="margin-left:30%;">
            <div class="profile_pic">
              <img src="../assets/img/logo-32.png" style="height:150px;margin-left: 150px" alt="..." class=" profile_img">
-		   </div>
+       </div>
          </div>
-		 <div class="col-md-12" style="text-align: center;">
-			 <h1 style="font-size:55px;">Welcome, <b style="text-transform: uppercase">MM Granites</b>, Admin</h1>
-		  </div>
-	   </div>
+     <div class="col-md-12" style="text-align: center;">
+       <h1 style="font-size:55px;">Welcome, <b style="text-transform: uppercase">MM Granites</b>, Admin</h1>
+      </div>
+     </div>
         <!-- /page content -->
 
         <!-- footer content -->
@@ -78,6 +80,6 @@ if($_SESSION['sid']=="")
 
     <!-- Custom Theme Scripts -->
     <script src="build/js/custom.min.js"></script>
-	
+  
   </body>
 </html>

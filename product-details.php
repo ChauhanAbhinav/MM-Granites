@@ -75,6 +75,47 @@ include 'header.php';
 
 </div>
 </div>
+<div class="row">
+ <div class="col-sm-12">
+
+<div class="jumbo">
+ <center><h2
+ 	>Recent Products</h2></center>
+
+
+ </div>
+
+ </div>
+
+<?php 
+   include 'config.php';
+   $q="SELECT * FROM `products` order by `id` desc limit 0,6   ";
+   $d=mysqli_query($dbcon,$q);
+   while($res=mysqli_fetch_array($d))
+   {
+
+
+	?>
+<a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
+
+<div class=" col-sm-2">
+<figure>
+	<img src="admin/<?php echo $res['image'];   ?>" style="height: 150px;width: 100%">
+<figcaption>
+	<h3><?php echo $res['name'];   ?></h3>
+<p >
+
+<?php echo $res['brief'];   ?>
+
+</p>
+</figcaption>
+</figure>
+
+
+</div>
+</a>
+<?php  }?>
+
 </section>
  <?php
 include 'footer.php';

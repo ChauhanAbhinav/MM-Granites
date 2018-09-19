@@ -66,7 +66,8 @@ include 'header.php';
 <p >
 
 <?php echo $res['brief'];   ?>
-
+<br>
+<br>
 </p>
 </figcaption>
 </figure>

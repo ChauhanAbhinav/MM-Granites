@@ -15,103 +15,7 @@
 <link rel="stylesheet" href="lib/owl.theme.css">
 <link rel="stylesheet" href="lib/owl.transitions.css">
 
-		<script>
-		r=0;
-			function readmore1()
-			{	read=document.getElementById("readmore3");
-			read2=document.getElementById("readmore1");
-				if(r==0)
-				{
-				read.style.display="block";
-				read2.innerHTML="Read Less";
-				read2.style.fontSize="2em";
-				read2.style.fontFamily="cursive";
-				r=1;
-				}
-				else if(r==1)
-				{
-				read.style.display="none";
-				read2.innerHTML="Read More";
-				read2.style.fontSize="2em";
-				read2.style.fontFamily="cursive";
-				r=0;
-				}
-				
-			}
-		</script>
-<script>
-	ecom=0;
-			function ecomreadmore()
-			{	read=document.getElementById("readmoreecom");
-			read2=document.getElementById("readmoreecomm");
-				if(ecom==0)
-				{
-				read.style.display="block";
-				read2.innerHTML="Read Less";
-				read2.style.fontSize="2em";
-				read2.style.fontFamily="cursive";
-				ecom=1;
-				}
-				else if(ecom==1)
-				{
-				read.style.display="none";
-				read2.innerHTML="Read More";
-				read2.style.fontSize="2em";
-				read2.style.fontFamily="cursive";
-				ecom=0;
-				}
-				
-			}
-</script>
-<script>
-	pro3=0;
-			function products3()
-			{	read=document.getElementById("product3");
-			read2=document.getElementById("proread3");
-				if(pro3==0)
-				{
-				read.style.display="block";
-				read2.innerHTML="Read Less";
-				read2.style.fontSize="2em";
-				read2.style.fontFamily="cursive";
-				pro3=1;
-				}
-				else if(pro3==1)
-				{
-				read.style.display="none";
-				read2.innerHTML="Read More";
-				read2.style.fontSize="2em";
-				read2.style.fontFamily="cursive";
-				pro3=0;
-				}
-				
-			}
-</script>
-<script>
-	pro4=0;
-			function products4()
-			{	read=document.getElementById("product4");
-			read2=document.getElementById("proread4");
-				if(pro4==0)
-				{
-				read.style.display="block";
-				read2.innerHTML="Read Less";
-				read2.style.fontSize="2em";
-				read2.style.fontFamily="cursive";
-				pro4=1;
-				}
-				else if(pro4==1)
-				{
-				read.style.display="none";
-				read2.innerHTML="Read More";
-				read2.style.fontSize="2em";
-				read2.style.fontFamily="cursive";
-				pro4=0;
-				}
-				
-			}
-</script>
-
+		
 </head>
 <body>
 <?php 
@@ -211,104 +115,35 @@ Today, M M Granite, with a keen aptitude for innovation and skill, inclination t
  		<h5>We Believe in Delivering Quality Products for Self-Satisfaction</h5>
  	</div>
  		<div class="row" id="row2">
-			<div class="col-sm-3">
-				<img src="assets/img/pro 1.jpg" title="" style="height: 200px;width: 100%" />
-				<h2>Web Development</h2>
-				<center>
-					<blockquote>Design Smart Web offers a complete web design solution to meet the demands of any size project</blockquote>
-					
-				</center>
-				<center>
-					<span id="readmore1" onclick="return readmore1()" style="cursor: pointer;color: blue;">Read More</span>
-					
-				</center>
-				<div class="col-sm-12" id="readmore3">
-					<center>
-						<img src="assets/img/pro 1.jpg" id="wbd1" class="img-circle img-responsive" />
-					</center>
-					<center><h3><u>HTML5 / CSS3</u></h3></center>
-					<span class="readmore">HTML5 and CSS. Using HTML5 and CSS3 provides advantages to businesses that develop and
-						 deploy web content and web applications, to create refined and accurate web pages and web systems that operate
-						  across devices, operating systems and web browsers.
-					
-					
-					
-					
-</span>
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<img src="assets/img/pro 1.jpg" title="" style="height: 200px;width: 100%" />
-				<center><h2>E-Commerce Development</h2></center>
-				<blockquote>
-				
-Make your online shopping website livelier and user friendly with our reasonable & customized ecommerce solutions
-					
-					
-				</blockquote>
-				<center><span id="readmoreecomm" onclick="return ecomreadmore()" style="cursor: pointer;color: blue;">Read More</span></center>
-				<div class="col-sm-12" id="readmoreecom">
-					<center>
-						<img src="assets/img/pro 1.jpg" class="img-circle img-responsive" id="ecomimg" > 
-					</center>
-					<center><h3><u>E-Commerce Website</u></h3></center>
-					<span class="readmore">Electronic commerce or ecommerce is a term for any type of business, or commercial transaction, that involves the transfer of information across the Internet. ... It is currently one of the most important aspects of the Internet to emerge.</span>
-					
-					
-				</div>
-				
-				
-			</div>
 			
-<div class="col-sm-3">
-				<img src="assets/img/pro 1.jpg" title="" style="height: 200px;width: 100%" />
-				<h2>Web Development</h2>
-				<center>
-					<blockquote>Design Smart Web offers a complete web design solution to meet the demands of any size project</blockquote>
-					
-				</center>
-				<center>
-					<span id="proread3" onclick="return products3()" style="cursor: pointer;color: blue;">Read More</span>
-					
-				</center>
-				<div class="col-sm-12" id="product3">
-					<center>
-						<img src="assets/img/pro 1.jpg" id="wbd1" class="img-circle img-responsive" />
-					</center>
-					<center><h3><u>HTML5 / CSS3</u></h3></center>
-					<span class="readmore">HTML5 and CSS. Using HTML5 and CSS3 provides advantages to businesses that develop and
-						 deploy web content and web applications, to create refined and accurate web pages and web systems that operate
-						  across devices, operating systems and web browsers.
-					
-					
-					
-					
-</span>
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<img src="assets/img/pro 1.jpg" title="" style="height: 200px;width: 100%" />
-				<center><h2>E-Commerce Development</h2></center>
-				<blockquote>
-				
-Make your online shopping website livelier and user friendly with our reasonable & customized ecommerce solutions
-					
-					
-				</blockquote>
-				<center><span id="proread4" onclick="return products4()" style="cursor: pointer;color: blue;">Read More</span></center>
-				<div class="col-sm-12" id="product4">
-					<center>
-						<img src="assets/img/pro 1.jpg" class="img-circle img-responsive" id="ecomimg" > 
-					</center>
-					<center><h3><u>E-Commerce Website</u></h3></center>
-					<span class="readmore">Electronic commerce or ecommerce is a term for any type of business, or commercial transaction, that involves the transfer of information across the Internet. ... It is currently one of the most important aspects of the Internet to emerge.</span>
-					
-					
-				</div>
-				
-				
-			</div>
-			
+<?php 
+   include 'config.php';
+   $q="SELECT * FROM `products` order by `id` desc limit 0,4   ";
+   $d=mysqli_query($dbcon,$q);
+   while($res=mysqli_fetch_array($d))
+   {
+
+
+	?>
+<a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
+
+<div class=" col-sm-3">
+<figure>
+	<img src="admin/<?php echo $res['image'];   ?>" style="height: 150px;width: 100%">
+<figcaption>
+	<h3><?php echo $res['name'];   ?></h3>
+<p >
+
+<?php echo $res['brief'];   ?>
+
+</p>
+</figcaption>
+</figure>
+
+
+</div>
+</a>
+<?php  }?>
 			
 
 			
@@ -319,7 +154,7 @@ Make your online shopping website livelier and user friendly with our reasonable
 <div class="col-sm-12 col-md-12">
 
 <center>
-	<a href="#"><button class="btn btn-default" style="background-color:#e75143;color:white;  border: none;  zoom:150%;opacity:1">View All Products</button></a>
+	<a href="products.php"><button class="btn btn-default" style="background-color:#e75143;color:white;  border: none;  zoom:150%;opacity:1">View All Products</button></a>
 </center>
 </div>
 		</div>

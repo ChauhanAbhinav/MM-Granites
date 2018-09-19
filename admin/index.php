@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 require 'config.php';
@@ -5,21 +6,21 @@ require 'config.php';
 <?php
 if(isset($_POST['login']))
 {
-	extract($_POST);
-	$query="SELECT * FROM `admin` WHERE `username`='".$user."' and  `password`='".$password."'";
-	$data=mysqli_query($dbcon,$query) or die(mysqli_error($dbcon));
-	$res=mysqli_fetch_array($data);
-	if($res['username']==$user and $res['password']==$password)
-	{
-		$_SESSION['sid']=$res['username'];
-		$_SESSION['user']=$res['name'];
-		header("location:admin.php");	
-	}
-	else
-	{
-		$wrong_id_pw="<div class='alert alert-warning'><span>Warning!</span>User ID and Password does not match</div>";	
-	}
-	 
+    extract($_POST);
+    $query="SELECT * FROM `admin` WHERE `username`='".$user."' and  `password`='".$password."'";
+    $data=mysqli_query($dbcon,$query) or die(mysqli_error($dbcon));
+    $res=mysqli_fetch_array($data);
+    if($res['username']==$user and $res['password']==$password)
+    {
+        $_SESSION['sid']=$res['username'];
+        $_SESSION['user']=$res['name'];
+        header("location:admin.php");   
+    }
+    else
+    {
+        $wrong_id_pw="<div class='alert alert-warning'><span>Warning!</span>User ID and Password does not match</div>"; 
+    }
+     
 }
 
 
@@ -52,13 +53,12 @@ if(isset($_POST['login']))
 <div class="col-sm-12">
 <div class="right_col" role="main" >
           <!-- top tiles -->
-     <div class="col-md-12" style="margin-left:30%;">
-           <div class="profile_pic">
-             <img src="../assets/img/logo-32.png" style="height:100px;margin-left: 150px" alt="..." class=" profile_img">
-       </div>
-         </div>
-     <div class="col-md-12" style="text-align: center;">
-       <h1 style="font-size:55px;"><b style="text-transform: uppercase">MM Granites</b>, Admin Login</h1>
+     <div class="col-md-12" style="">
+           
+             <img src="../assets/img/logo-32.png" style="height:40px;" alt="..." class=" profile_img">
+       
+        
+       <h3style="font-size:25px;"><b style="text-transform: uppercase">MM Granites</b>, Admin Login</h3>
       </div>
      </div>
 </div>
@@ -107,3 +107,61 @@ if(isset($_POST['login']))
    </div>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
