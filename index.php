@@ -11,6 +11,9 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/header-footer.css">
+<link rel="stylesheet" href="lib/owl.carousel.css">
+<link rel="stylesheet" href="lib/owl.theme.css">
+<link rel="stylesheet" href="lib/owl.transitions.css">
 
 		<script>
 		r=0;
@@ -111,33 +114,38 @@
 
 </head>
 <body>
-
-<div class="container-fluid">
 <?php 
 include 'header.php';
 ?>
+<!-- image slider -->
+
+<div id="home-slider" class="owl-carousel owl-theme">
+ 
+  <div class="item"><img src="assets/img/home.jpg">
+  	<div id="banner">
+  		<center>
+			<p id="banner_head">Welcome to the MM Granites Pvt Lt</p>
+			<h3 id="banner_tagline" style="color:white">
+				We are the one of leader dealers in all kinds of marble product designs across Rajasthan.
+			</h3>	
+		</center>
+  	</div>
+  </div>
+  
+  <div class="item"><img src="assets/img/home2.jpg" >
+  	<div id="banner-small">
+  		<span class="banner-item"> Grenite</span>
+  	</div>
+  </div>
+  <div class="item"><img src="assets/img/home3.jpg">
+  	<div id="banner-small"><span class="banner-item"> Ceremic Products</span></div>
+  </div>
+ 
 </div>
-<section class="main_banner" style="background-image:url('assets/img/home.jpg');">
-<div class="container" id="banner">
-<div class="row">
-<div class="col-sm-12 col-md-12">
-<center>
-	<p id="banner_text">Welcome to the company
-		<br>
-	
-</p>
-<h3 style="color:white">
-		MM Granite.We are the leader dealer in all kinds of marbel product designs across Rajasthan..
-	</h3>	
-</center>
-<br>
-<br>
-<center>
-	<a href="#"><button class="btn btn-default" style="background-color:#e75143;color:white;   border: none; zoom:150%;opacity:1">Explore More</button></a>
-</center>
-</div>
-</div>
+
  </section>
+<!-- image slider closed -->
+
  <section class="why_us">
 <div class="container">
 <div class="row">
@@ -351,12 +359,28 @@ Make your online shopping website livelier and user friendly with our reasonable
 				
 			</marquee>
 			
-		</div>
-<div class="container-fluid">
- <?php
-include 'footer.php';
- ?>
 </div>
 
+<?php
+include 'footer.php';
+ ?>
+<script src="lib/jquery.min.js"></script>
+<script src="lib/owl.carousel.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+ 
+  $("#home-slider").owlCarousel({
+ 
+      navigation : true, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true,
+ 	  //autoPlay:true
+    // autoPlayTimeout:1000,
+    // autoPlayHoverPause:true
+  });
+ 
+});
+</script>
 </body>
 </html>
