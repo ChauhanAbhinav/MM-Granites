@@ -1,51 +1,13 @@
 .container-fluid{
 	padding: 0px;
 }
-.header{
-	height: 50px;
-	width: 100%;
-	background-color: #f8fafb;
-	padding: 10px;
-	box-sizing: border-box;
-}
-.header-inside{
-width:100%;
-height: 30px;
-padding-left:40px;
-/*background-color: red; */
-}
-.logo-wrapper{
-	float: left;
-}
-.logo{
-	display: inline;
-	height: 30px;
-	width:30px;
-}
-.mmGranites{
-	padding-left: 10px;
-	font-weight: 700;
-	font-size:16px;
-}
-.nav-bar{
-	/*display: flex;*/
-	height: 30px;
-	float: right;
-	justify-content: center;
-  	align-items: center;
-}
-.main_banner
-{
-	
-	height:500px;
-
-}
-#banner_text
-{
-	font-size:400%;
+#banner_head{
+	font-size:40px;
 	color:white;
-	
-	margin-top:100px;
+	}
+#banner_tagline{
+	font-size:25px;
+	color:white;
 }
 .why_us_text
 {
@@ -53,15 +15,40 @@ padding-left:40px;
 	color: black;
 	font-size: 2em;
 }
+.item{
+	position: relative;
+}
 #banner
 {
-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+  	align-items: center;
+position: absolute;
+left:0;
+top: 0;
+height:100%;
 width:100%;
-background-color: rgba(0,0,0,.6);
+z-index: 999;
+background-color: rgba(0,0,0,.4);
  }
-			{
-			
-			}
+ #banner-small{
+ 	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+  	align-items: center;
+ position: absolute;
+left:0;
+top: 80%;
+height:20%;
+width:100%;
+z-index: 999;
+background-color: rgba(0,0,0,.4);	
+ }
+ .banner-item{
+ 	color: white;
+ 	font-size: 20px;
+ }
 			#para1
 			{
 				font-family: cursive;
@@ -120,3 +107,38 @@ background-color: rgba(0,0,0,.6);
 			{
 				display: none;
 			}
+#home-slider .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 760px){
+	#banner_head{
+	font-size:30px;
+	}
+#banner_tagline{
+	font-size:18px;
+	}
+ .banner-item{
+ 	font-size: 18px;
+ }
+} 
+@media screen and (max-width: 576px){
+	#banner_head{
+	font-size:25px;
+	}
+#banner_tagline{
+	font-size:15px;
+	}
+	 .banner-item{
+ 	font-size: 13px;
+ }
+} 
+@media screen and (max-width: 576px){
+	#banner_head{
+	font-size:20px;
+	}
+#banner_tagline{
+	font-size:13px;
+	}
+} 

@@ -55,7 +55,7 @@ include 'config.php';
 			</form>
 		</div>
 		<div class="col-sm-4 social-block">
-			<span class="footer-heading">Social Link</span>
+			<span class="footer-heading">Social Links</span>
 			<div class="social-icon-block">
 				<img src="assets/img/fb.png" class="social-icon">
 				<img src="assets/img/twitter.png" class="social-icon">
