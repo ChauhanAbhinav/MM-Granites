@@ -15,12 +15,9 @@
 </head>
 <body>
 
-<div class="container-fluid">
 <?php 
 include 'header.php';
 ?>
-
-</div>
 
 <section style="background-image: url('assets/img/about.jpg');height:150px ">
 <div class="container-fluid" id="product_banner"> 
@@ -34,8 +31,8 @@ include 'header.php';
 
 <section>
 	<div class="container-fluid">
-	<div class="jumbo">
-	<center>Our Mission</center>
+	<div class="jumbo" style="padding: 10px;">
+	<h4>Our Mission</h4>
 	</div>
 	<div class="row">
 		<div class="col-sm-12 our-mission-text">
@@ -112,8 +109,6 @@ M Tech, IIT Delhi
 </div>
 </section>
 
-<div class="container-fluid">
  <?php
 include 'footer.php';
  ?>
-</div>

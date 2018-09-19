@@ -146,82 +146,71 @@ include 'header.php';
  </section>
 <!-- image slider closed -->
 
- <section class="why_us">
-<div class="container">
-<div class="row">
-<div class="col-sm-12 col-md-12 col-xs-12">
-  <center>
-  	<h1 style="font-weight:900">Why Us</h1>
-
-  </center>
-  <p class="why_us_text">
+ <section class="why_us" style="margin-top: 30px;">
+<div class="container-fluid">
+  	<div class="jumbo">
+  		<h4 style=""><strong>Why Us</strong></h4>
+  	</div>
+  	
+ <p class="why_us_text">
    MM Granites is the leading Indian conglomerate and a global trendsetter in the world of Natural Stone.
 The choice of undertaking the paths less travelled has made all the difference in the success story of M M Granite. The company was established in a simple warehouse  and ever since has been raising the bar with its quality products and superior services.
 
 Today, M M Granite, with a keen aptitude for innovation and skill, inclination towards concurrent technological advancements, and with multiple quarries at Dharmeta, Morwad, Dhariyawad, Banswara in Rajasthan, India, along with quarries in Yên Bái province, Vietnam, has emerged as an undisputed leader in marble mining, processing, and research and technology development across the globe.
-  </p>
+ </p>
 </div>
-
-
-</div>
-
  </section>
- <section style="background-image:url('assets/img/work.jpg');">
- 	<div class="container" >
+
+ <section style="background-image:url('assets/img/work.jpg'); background-position: center;">
+ 	<div class="container-fluid" style="background-color: rgba(0,0,0,0.5);padding-top:20px;padding-bottom: 20px;">
 <div class="col-md-4 col-sm-12">
 <center>
-	<img src="assets/img/quality2.png" class="img-responsive img-circle" style="zoom:50%;margin-top:20px" >
+	<div style="display:inline-block;background-color: white;border-radius: 100%;padding: 10px;margin-top:30px">
+	<img src="assets/img/quality.png" style="zoom:60%">
+	</div>
 </center>
-<center style="color: white;font-weight: 700;font-size: 2.5em">High Quality</center>
-<p style="color: white">
-	
-
-	License: Distributed under the Lesser General Public License (LGPL)     
-           http://www.gnu.org/copyleft/lesser.html                        
-  This program is distributed in the hope that it will be useful - WITHOUT  
-  ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or     
-  FITNESS FOR A PARTICULAR PURPOSE
+<center style="color: white;"><strong><h4>High Quality</strong></h4></center>
+<p style="color: white;padding-top: 20px;">
+	Distributed under the Lesser General Public License
+  This program is distributed in the hope that it will be useful without even the implied warranty.  
+  This program is distributed in the hope that it will be useful without even the implied warranty.  
 </p>
 </div>
 <div class="col-md-4 col-sm-12">
 <center>
-	<img src="assets/img/quality2.png" class="img-responsive img-circle" style="zoom:50%;margin-top:20px" >
+	<div style="display:inline-block;background-color: white;border-radius: 100%;padding: 10px;margin-top:30px">
+	<img src="assets/img/strength.png" style="zoom:60%">
+	</div>
 </center>
-<center style="color: white;font-weight: 700;font-size: 2.5em">High Quality</center>
-<p style="color: white">
-	
-
-	License: Distributed under the Lesser General Public License (LGPL)     
-           http://www.gnu.org/copyleft/lesser.html                        
- This program is distributed in the hope that it will be useful - WITHOUT  
- ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or     
- FITNESS FOR A PARTICULAR 
+<center style="color: white;"><strong><h4>High Quality</strong></h4></center>
+<p style="color: white;padding-top: 20px;">
+	Distributed under the Lesser General Public License
+  This program is distributed in the hope that it will be useful without even the implied warranty.  
+  This program is distributed in the hope that it will be useful without even the implied warranty.  
 </p>
 </div>
 <div class="col-md-4 col-sm-12">
 <center>
-	<img src="assets/img/quality2.png" class="img-responsive img-circle" style="zoom:50%;margin-top:20px" >
+	<div style="display:inline-block;background-color: white;border-radius: 100%;padding: 10px;margin-top:30px">
+	<img src="assets/img/hammer.png" style="zoom:60%">
+	</div>
 </center>
-<center style="color: white;font-weight: 700;font-size: 2.5em">High Quality</center>
-<p style="color: white">
-	
-
-	License: Distributed under the Lesser General Public License (LGPL)     
-           http://www.gnu.org/copyleft/lesser.html                        
- This program is distributed in the hope that it will be useful - WITHOUT  
- ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or     
- FITNESS FOR A PARTICULAR 
+<center style="color: white;"><strong><h4>High Quality</strong></h4></center>
+<p style="color: white;padding-top: 20px;">
+	Distributed under the Lesser General Public License
+  This program is distributed in the hope that it will be useful without even the implied warranty.  
+  This program is distributed in the hope that it will be useful without even the implied warranty.  
 </p>
 </div>
 
 
  </section>
- <div class="container">
- 	<center>
- 		<h1><strong>Our Featured Products</strong></h1>
- 		<h3>We Believe in Delivering Quality Products for Self-Satisfaction</h3>
- 	</center>
-		<div class="row" id="row2">
+ <div class="container-fluid">
+ 	<div class="jumbo" style="margin-top: 0px;margin-bottom: 20px;">	
+ 		<h4>Our Featured Products</h4>
+ 		<h5>We Believe in Delivering Quality Products for Self-Satisfaction</h5>
+ 	</div>
+ 		<div class="row" id="row2">
 			<div class="col-sm-3">
 				<img src="assets/img/pro 1.jpg" title="" style="height: 200px;width: 100%" />
 				<h2>Web Development</h2>
@@ -337,28 +326,33 @@ Make your online shopping website livelier and user friendly with our reasonable
 		
 		</div>
 
- <div class="container-fluid" style="background:black;color: white">
+ <div class="container-fluid" style="background-color: rgba(240,240,240,0.8);color: black;margin-top: 30px;">
  	<center>
- 		<h1><strong>Our Happy Clients</strong></h1>
- 		<h3>Many Satisfied Customer Trust <strong>MM Granites</strong>
+ 		<h4 style="padding: 20px;"><strong>Our Happy Clients</strong></h4>
+ 		<h5>Many Satisfied Customer Trust <strong>MM Granites</strong>
         Products & Services.
-
- 		</h3>
-
- 	</center>
-			<marquee direction="right"  >
-				<img src="assets/img/man 1.jpg" style="height: 150px;width: 150px;border-radius:80px" />
-				<img src="assets/img/man 1.jpg" style="height: 150px;width: 150px;border-radius:80px">
-				<img src="assets/img/man 1.jpg" style="height: 150px;width: 150px;border-radius:80px">
-				<img src="assets/img/man 1.jpg"  style="height: 150px;width: 150px;border-radius:80px"/ >
-				<img src="assets/img/man 1.jpg" style="height: 150px;width: 150px;border-radius:80px">
-				<img src="assets/img/man 1.jpg" style="height: 150px;width: 150px;border-radius:80px">
-				<img src="assets/img/man 1.jpg" style="height: 150px;width: 150px;border-radius:80px">
-				<img src="assets/img/man 1.jpg" style="height: 150px;width: 150px;border-radius:80px">
-				
-				
-			</marquee>
-			
+		</h5>
+	</center>
+	<div id="testimonial-slider" class="owl-carousel owl-theme" style="margin-top: 20px;margin-bottom: 25px;text-align: center;">
+ 		<div class="item" >
+ 			<table style="margin: auto;"><tr>
+ 			<td><img class="client-img" src="assets/img/home.jpg"></td>
+ 			<td><spam class="client-qoute">Make your online shopping website livelier and user friendly with our reasonable</spam></td>
+ 			</tr></table>
+ 		</div>
+ 		<div class="item" >
+ 			<table style="margin: auto;"><tr>
+ 			<td><img class="client-img" src="assets/img/home.jpg"></td>
+ 			<td><spam class="client-qoute">Make your online shopping website livelier and user friendly with our reasonable</spam></td>
+ 			</tr></table>
+ 		</div>
+ 		<div class="item" >
+ 			<table style="margin: auto;"><tr>
+ 			<td><img class="client-img" src="assets/img/home.jpg"></td>
+ 			<td><spam class="client-qoute">Make your online shopping website livelier and user friendly with our reasonable</spam></td>
+ 			</tr></table>
+ 		</div>
+ 	</div>
 </div>
 
 <?php
@@ -371,15 +365,19 @@ $(document).ready(function() {
  
   $("#home-slider").owlCarousel({
  
-      navigation : true, // Show next and prev buttons
+      navigation : true,
       slideSpeed : 300,
       paginationSpeed : 400,
       singleItem:true,
- 	  //autoPlay:true
-    // autoPlayTimeout:1000,
-    // autoPlayHoverPause:true
-  });
- 
+ 	  autoPlay:true
+ });
+$("#testimonial-slider").owlCarousel({
+  	  navigation : true,
+      slideSpeed : 100,
+      paginationSpeed : 400,
+      singleItem:true,
+ 	  autoPlay:true
+  }); 
 });
 </script>
 </body>

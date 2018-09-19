@@ -1,6 +1,3 @@
-.container-fluid{
-	padding: 0px;
-}
 #banner_head{
 	font-size:40px;
 	color:white;
@@ -11,9 +8,10 @@
 }
 .why_us_text
 {
-	font-weight: 200;
 	color: black;
-	font-size: 2em;
+	/*font-size: 18px;*/
+	padding-top:20px;
+	padding-bottom: 10px; 	
 }
 .item{
 	position: relative;
@@ -111,6 +109,14 @@ background-color: rgba(0,0,0,.4);
     display: block;
     width: 100%;
     height: auto;
+}
+.client-img{
+	width: 75px;height: 75px;
+	border-radius: 100%;
+}
+.client-qoute{
+	padding-left: 20px;
+	color: #777777;
 }
 @media screen and (max-width: 760px){
 	#banner_head{
