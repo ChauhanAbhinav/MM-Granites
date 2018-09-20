@@ -49,6 +49,13 @@
                          
                     </ul>
                   </li>
+                  <li><a><i class="fa fa-edit"></i> Manage About Us <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a href="add-mission.php">Manage Mission</a></li>
+                        <li><a href="add-team-member.php">Manage Team</a></li>
+                         
+                    </ul>
+                  </li>
                   <li><a><i class="fa fa-envelope"></i>Manage Contact Requests <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                         

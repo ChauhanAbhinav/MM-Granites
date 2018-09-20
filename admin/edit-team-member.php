@@ -20,23 +20,23 @@ if(!(isset($did)))
 	extract($_POST);
 	if(isset($_POST['banner_update']))
 	{
-		$path = "product_images/" . $_FILES['image']['name'];
+		$path = "team_images/" . $_FILES['image']['name'];
     	move_uploaded_file($_FILES['image']['tmp_name'], $path);
 	if ($_FILES['image']['tmp_name'] != '' ) {
-       		$query="UPDATE `$page` SET `id`='".$did."', `image`='".$path."',`name`='".$name."',`brief`='".$brief."',`description`='".$description."' WHERE `id`='".$did."'";
+       		$query="UPDATE `$page` SET `id`='".$did."',`name`='".$name."', `profile_photo`='".$path."',`designation`='".$designation."',`qualification`='".$qualification."' WHERE `id`='".$did."'";
 			mysqli_query($dbcon,$query) or die(mysqli_error());
 			echo'<script>
        alert("Updated Successfully");
-       window.location.href="add-products.php";
+       window.location.href="add-team-member.php";
       </script>';
 			$empty="File Updated Successfully";
     }	
 	if ($_FILES['image']['tmp_name'] == '' ) {
-       		$query="UPDATE `$page` SET `id`='".$did."',`name`='".$name."',`brief`='".$brief."',`description`='".$description."' WHERE `id`='".$did."'";
+       		$query="UPDATE `$page` SET `id`='".$did."',`name`='".$name."',`designation`='".$designation."',`qualification`='".$qualification."' WHERE `id`='".$did."'";
 			mysqli_query($dbcon,$query) or die(mysqli_error());
 			echo'<script>
        alert("Updated Successfully");
-       window.location.href="add-products.php";
+       window.location.href="add-team-member.php";
       </script>';
     }	
 	else
@@ -82,7 +82,7 @@ if(!(isset($did)))
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
-                    <h2>Edit Products</h2>
+                    <h2>Edit Team Member</h2>
                     <ul class="nav navbar-right panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
@@ -119,18 +119,18 @@ if(!(isset($did)))
                               
             </div>
             <div class="form-group"  >
-               <label for="discription">Enter Product Name</label> 
+               <label for="name">Enter Member Name</label> 
                <input type="text" name="name" class="form-control" value="<?php echo $result['name']; ?>"  >
                 <p class="help-block"><?php echo @$empty;?></p>
             </div>
             <div class="form-group"  >
-               <label for="discription">Enter brief Description</label> 
-               <input type="text" name="brief" class="form-control" value="<?php echo $result['brief']; ?>"  >
+               <label for="designation">Enter Designation </label> 
+               <input type="text" name="designation" class="form-control" value="<?php echo $result['designation']; ?>"  >
                 <p class="help-block"><?php echo @$empty;?></p>
             </div>
           <div class="form-group"  >
-               <label for="discription">Detail Description</label> 
-               <input type="text" name="description" class="form-control" value="<?php echo $result['description']; ?>" >
+               <label for="qualification">Enter Qualification</label> 
+               <input type="text" name="qualification" class="form-control" value="<?php echo $result['qualification']; ?>" >
                 <p class="help-block"><?php echo @$empty;?></p>
             </div>
             
@@ -141,7 +141,7 @@ if(!(isset($did)))
                      <div class="ln_solid"></div>
                       <div class="form-group">
                         <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                          <button type="submit" class="btn btn-success" name="banner_update">Update Products</button>
+                          <button type="submit" class="btn btn-success" name="banner_update">Update Details</button>
 						 
                         </div>
                       </div>

@@ -125,36 +125,33 @@ Today, M M Granite, with a keen aptitude for innovation and skill, inclination t
 
 
 	?>
-<a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
 
 <div class=" col-sm-3">
 <figure>
-	<img src="admin/<?php echo $res['image'];   ?>" style="height: 150px;width: 100%">
+	<a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
+  <img src="admin/<?php echo $res['image'];   ?>" style="height: 150px;width: 100%">
+  </a>
 <figcaption>
-	<h3><?php echo $res['name'];   ?></h3>
-<p >
-
-<?php echo $res['brief'];   ?>
-
+	<h3>
+    <a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
+      <?php echo $res['name'];?>
+    </a>
+  </h3>
+<p>
+<?php echo $res['brief'];?>
 </p>
 </figcaption>
 </figure>
-
-
 </div>
-</a>
-<?php  }?>
-			
 
-			
-			
-			
+<?php  }?>
 		</div>
 		<div class="row">
-<div class="col-sm-12 col-md-12">
+<div class="col-sm-12">
 
 <center>
-	<a href="products.php"><button class="btn btn-default" style="background-color:#e75143;color:white;  border: none;  zoom:150%;opacity:1">View All Products</button></a>
+	<a href="products.php"><button class="btn btn-default" style="background-color:#e75143;color:white;border: none;  zoom:150%;opacity:1;margin-top:25px;">View All Products</button>
+  </a>
 </center>
 </div>
 		</div>

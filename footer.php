@@ -32,8 +32,17 @@ include 'config.php';
 				<span class="mmGranites mmGranites-footer">MM Granites</span>
 			</div>
 			<div class="address">
-				Nullam ac tortor ut massa fringilla semper non sit amet purus. Donec non nisl non dolor ultrices aliquam. Phasellus elementum sapien sed blandit finibus.  
-			</div>	
+				Nullam ac tortor ut massa fringilla semper non sit amet purus. Donec non nisl non dolor ultrices aliquam. Phasellus elementum sapien sed blandit finibus.
+		    </div>	
+		   <div class="other-links">
+		   		<ul class="other-links-list">
+		   			<li><a href="index.php">Home</a></li>
+		   			<li ><a href="products.php">Products</a></li>
+		   			<li ><a href="projects.php"> Projects</a></li>
+		   			<li ><a href="aboutus.php">About Us</a></li>
+		   			<li ><a href="contactus.php">Contact US</a></li>
+		   		</ul>
+		   </div> 
 		</div>
 		<div class="col-sm-4 query-block">
 			<span class="footer-heading">Enquery</span>
