@@ -43,15 +43,11 @@ include 'header.php';
 </section>
 
 <section>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm-12">
+				<div class="container-fluid">
 				<div class="jumbo">
-					<center><h3>Our Products are Our Main Strength</h3></center>
+					<h4>Our Products are Our Main Strength</h4>
 				</div>
-			</div>
-		</div>
-	</div>
+				</div>
 </section>
 
 <section style="margin-top: 20px;">	
@@ -75,17 +71,11 @@ include 'header.php';
 
 </div>
 </div>
-<div class="row">
- <div class="col-sm-12">
 
-<div class="jumbo">
- <center><h2
- 	>Recent Products</h2></center>
-
-
- </div>
-
- </div>
+<div class="container-fluid">
+<div class="jumbo" style="margin-top: 20px;margin-bottom: 20px;margin:;">
+<h4>Recent Products</h4>
+</div>
 
 <?php 
    include 'config.php';
@@ -96,13 +86,16 @@ include 'header.php';
 
 
 	?>
-<a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
 
 <div class=" col-sm-2">
 <figure>
+	<a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
 	<img src="admin/<?php echo $res['image'];   ?>" style="height: 150px;width: 100%">
+	</a>
 <figcaption>
+	<a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
 	<h3><?php echo $res['name'];   ?></h3>
+	</a>
 <p >
 
 <?php echo $res['brief'];   ?>

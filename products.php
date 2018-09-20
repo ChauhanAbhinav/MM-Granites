@@ -41,7 +41,7 @@ include 'header.php';
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="jumbo">
-					<center><h3>Our Products are Our Main Strength</h3></center>
+					<center><h4>Our Products are Our Main Strength</h4></center>
 				</div>
 			</div>
 		</div>
@@ -84,14 +84,17 @@ else
 
 
 	?>
-<a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
 
 <div class=" col-sm-3">
 <figure>
+	<a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
 	<img src="admin/<?php echo $res['image'];   ?>" style="height: 150px;width: 100%">
+	</a>
 <figcaption>
+	<a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
 	<h3><?php echo $res['name'];   ?></h3>
-<p >
+	</a>
+<p>
 
 <?php echo $res['brief'];   ?>
 <br>
@@ -102,7 +105,6 @@ else
 
 
 </div>
-</a>
 <?php
   }
 ?>
@@ -122,8 +124,8 @@ else
 
    
 	?>
-	<div class="jumbo">
-	<center>
+</div>
+<div class="jumbo" style="margin-top: 0px;">
 		<?php
 		for($i=1;$i<=$row1;$i++)
     {
@@ -132,9 +134,8 @@ else
    <?php
     }
    ?>
-</center>
+	
 	</div>
-</div>
 
 </section>
  <?php

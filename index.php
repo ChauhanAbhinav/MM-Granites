@@ -128,13 +128,17 @@ include 'header.php';
 
 
 	?>
-<a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
+
 
 <div class=" col-sm-3">
 <figure>
-	<img src="admin/<?php echo $res['image'];   ?>" style="height: 150px;width: 100%">
+	<a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
+  <img src="admin/<?php echo $res['image'];   ?>" style="height: 150px;width: 100%">
+  </a>
 <figcaption>
-	<h3><?php echo $res['name'];   ?></h3>
+	<a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
+  <h3><?php echo $res['name'];   ?></h3>
+  </a>
 <p >
 
 <?php echo $res['brief'];   ?>
@@ -145,7 +149,6 @@ include 'header.php';
 
 
 </div>
-</a>
 <?php  }?>
 			
 

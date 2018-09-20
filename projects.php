@@ -38,13 +38,9 @@ include 'header.php';
 
 <section>
 	<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm-12">
 				<div class="jumbo">
-					<center><h3>More of What You Want</h3></center>
+				<h4>More of What You Want</h4>
 				</div>
-			</div>
-		</div>
 	</div>
 </section>
 
@@ -122,8 +118,7 @@ else
 
    
 	?>
-	<div class="jumbo">
-	<center>
+	<div class="jumbo" style="margin-right: -30px;margin-left: -30px;margin-top: 0px;">
 		<?php
 		for($i=1;$i<=$row1;$i++)
     {
@@ -132,7 +127,6 @@ else
    <?php
     }
    ?>
-</center>
 	</div>
 </div>
 
