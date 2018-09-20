@@ -25,7 +25,7 @@
                 <ul class="nav side-menu">
                   <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-					              <li><a href="add-products.php">Manage Products</a></li>
+					              <li><a href="add-whyus.php">Manage Why Us Section</a></li>
                         <li><a href="add-projects.php">Manage Projects</a></li>
                         <li><a href="manage-contact-req.php">Manage Contact Request</a></li>
                          
