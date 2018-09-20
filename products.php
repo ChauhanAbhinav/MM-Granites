@@ -1,3 +1,9 @@
+	<?php 
+  include 'config.php';
+
+
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -47,9 +53,31 @@ include 'header.php';
 <div class="row">
 
 <div class="col-sm-12">
-	<?php 
-   include 'config.php';
-   $q="SELECT * FROM `products`";
+
+<?php
+ include 'config.php';
+ if(isset($_GET['page']))
+{
+	$page=$_GET['page'];
+	
+
+if($page==""||$page==1)
+{
+$p=0;
+}
+else
+{
+	$p=$page;
+$p=($p-1)*8+1;
+}
+ 	$q="SELECT * FROM `products` LIMIT  $p,8";  
+
+
+}
+else
+{
+	$q="SELECT * FROM `products` LIMIT  0,8";
+}
    $d=mysqli_query($dbcon,$q);
    while($res=mysqli_fetch_array($d))
    {
@@ -75,14 +103,36 @@ include 'header.php';
 
 </div>
 </a>
-<?php  }?>
+<?php
+  }
+?>
 
 </div>
 
 </div>
 <div class="container-fluid">
+	<?php 
+   $query1=mysqli_query($dbcon,"SELECT * FROM `products` ");
+   $row=mysqli_num_rows($query1);
+
+
+   $row=$row/8;
+
+   $row1=ceil($row);
+
+   
+	?>
 	<div class="jumbo">
-	<center>Space for Pagination</center>
+	<center>
+		<?php
+		for($i=1;$i<=$row1;$i++)
+    {
+	?>
+    <a style="text-decoration: none" href="products.php?page=<?php echo $i; ?>"> <?php echo $i ; ?> </a> 
+   <?php
+    }
+   ?>
+</center>
 	</div>
 </div>
 

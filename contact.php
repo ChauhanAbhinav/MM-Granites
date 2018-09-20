@@ -88,25 +88,44 @@ include 'header.php';
     </div>
        <div class="col-sm-6">
           <div class="col-sm-12">
+            <?php  
+    include 'config.php';
+    $query="SELECT * FROM `company_address` ORDER BY `id` DESC";
+    $data1=mysqli_query($dbcon,$query);
+    $result1=mysqli_fetch_array($data1);
+    ?>
             <blockquote>
           	  Address
        	      <footer>
        	  	  <br>
-       		   Sector:- 123<br>
-       		   Block:-abc<br>
-       		   Jaipur (Rajasthan)
+       		   <?php echo $result1['add_1'] ; ?>
+             <br>
+       		   <?php echo $result1['add_2'] ; ?>
+             <br>
+             <?php echo $result1['add_3'] ; ?>
+             <br>
+             <?php echo $result1['add_4'] ; ?>
+             <br>
+             <?php echo $result1['add_5'] ; ?>
+             <br>
        	      </footer>
             </blockquote>
           </div>
        
        <div class="col-sm-12">
+         <?php  
+    include 'config.php';
+    $query="SELECT * FROM `company_contacts` ORDER BY `id` DESC";
+    $data1=mysqli_query($dbcon,$query);
+    $result2=mysqli_fetch_array($data1);
+    ?>
         <blockquote>
        	Contact Details
        	<footer>
        		<br>
-       		<strong>Phone:-</strong>******1234<br>
-       		<strong>Fax:-</strong>******1234<br>
-       		<strong>Email:-</strong>dfvbdsfvb@dvnb.com<br>
+       		<strong>Phone:-</strong><?php echo $result2['phone'] ; ?><br>
+       		<strong>Fax:-</strong><?php echo $result2['fax'] ; ?><br>
+       		<strong>Email:-</strong><?php echo $result2['email'] ; ?><br>
        	  </footer>
         </blockquote>
         </div>

@@ -34,7 +34,7 @@ include 'header.php';
 	<div class="row">
 		<div class="col-sm-3">
 			<h1 style="color: white;margin-top:50px">Products</h1>
-			<h5 ><a style="color: white;text-decoration: none" href="index.php">Home /</a><a style="color: white;text-decoration: none" href="#">Products</a>
+			<h5 ><a style="color: white;text-decoration: none" href="index.php">Home /</a><a style="color: white;text-decoration: none" href="products.php">Products /</a><a style="color: white;text-decoration: none" href="#">Product Details</a>
 			</h5>
 		</div>
 
