@@ -45,22 +45,23 @@ if(isset($_POST['login']))
     <link href="build/css/custom.min.css" rel="stylesheet">
   </head>
 
-  <body class="login" style="background-color:#2A3F54">
-   <div class="container-fluid">
+  <body class="login" style="background-color:  #EDEDED;">
+   <div class="container-fluid" style="margin-right:-15px;margin-left: -15px">
     <div class="row">
-      <div class="col-sm-12" style="background-color: #EDEDED;">
+      <div class="col-sm-12" style="background-color:#2A3F54;width: 100% ">
       
 <div class="col-sm-12">
-<div class="right_col" role="main" >
-          <!-- top tiles -->
-     <div class="col-md-12" style="">
+ <!-- top tiles -->
+     
            
-             <img src="../assets/img/logo-32.png" style="height:40px;" alt="..." class=" profile_img">
+           <center>  <img src="../assets/img/logo-32.png" style="height:40px;" alt="..." class=" profile_img"> <p style="font-size:25px;color:white"><b style="text-transform: uppercase">MM Granites</b></p>
+                  
+           </center>
        
         
-       <h3style="font-size:25px;"><b style="text-transform: uppercase">MM Granites</b>, Admin Login</h3>
-      </div>
-     </div>
+      <center> <h3 style="font-size:25px;color:white">Admin Login</h3></center>
+     
+
 </div>
        </div>
     </div>

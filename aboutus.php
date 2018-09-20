@@ -28,17 +28,22 @@ include 'header.php';
 </div>
 </div>
 </section>
-
 <section>
 	<div class="container-fluid">
 	<div class="jumbo" style="padding: 10px;">
-	<h4>Our Mission</h4>
+	<?php 
+   include 'config.php';
+   $q="SELECT * FROM `mission` order by `id` desc";
+   $d=mysqli_query($dbcon,$q);
+  	$res=mysqli_fetch_array($d);
+	?>
+
+	<h4><?php echo $res['heading'] ?></h4>
 	</div>
 	<div class="row">
 		<div class="col-sm-12 our-mission-text">
 			<span class="">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta mauris vitae libero ultricies, ut tempus turpis iaculis. Vivamus non luctus odio. Sed consequat ac nibh vitae condimentum. Etiam ultricies placerat scelerisque. Cras tristique, nibh in ullamcorper dignissim, turpis nulla mattis ante, gravida fermentum sem erat ac enim. Donec hendrerit viverra tortor. Mauris sed mauris leo. Nullam suscipit ipsum vitae dolor accumsan, ac sagittis dolor rhoncus. Donec lobortis orci vitae metus euismod ultricies. In ornare purus sit amet mauris accumsan interdum. Aliquam iaculis cursus tincidunt.</p>
-				Cras quis nulla ac ante efficitur egestas at vel eros. Sed in vulputate nisl. Proin ac ex iaculis magna feugiat vehicula. In eget sapien justo. Donec consequat urna quam, vel dapibus quam blandit et. Morbi efficitur ut est vitae dignissim. Nulla ut mauris eget lectus iaculis porta. Nam ornare tincidunt nunc, sed consequat nulla ultrices eget. Nulla rutrum porttitor ex, nec vehicula erat. In a orci rhoncus, laoreet mauris in, imperdiet lectus. Morbi sed justo eu lorem convallis scelerisque. Donec vulputate et dolor ut pharetra.
+				<p><?php echo $res['content']?></p>
 			</span>
 		</div>
 	</div>
@@ -57,58 +62,34 @@ include 'header.php';
 <section>
 <div class="container-fluid">
 <div class="row">
-
+<?php 
+$q1="SELECT * FROM `team`";
+ $d1=mysqli_query($dbcon,$q1);
+  	while($res1=mysqli_fetch_assoc($d1))
+  	 {
+	?>
 <div class="col-sm-4 team-col">
 <figure>
-	<img src="assets/img/man 1.jpg" class="team-img">
+	<img src="admin/<?php echo $res1['profile_photo'];?>" class="team-img">
 <figcaption>
-	<h3>Forestino Markus</h3>
+	<h3><?php echo $res1['name'];?></h3>
 <p class="post-text">
-Co Founder
+<?php echo $res1['designation'];?>
 </p>
 <p class="team-about-text">
-MBA, IIM Ahamdabad
-</p>
-</figcaption>
-</figure>
-
-
-</div>
-<div class="col-sm-4 team-col">
-<figure>
-	<img src="assets/img/man 2.jpg" class="team-img">
-<figcaption>
-	<h3>Jesse greg</h3>
-<p class="post-text">
-Co Founder
-</p>
-<p class="team-about-text">
-MBA, IIM Ahamdabad
-</p>
-</figcaption>
-</figure>
-
-
-</div>
-<div class="col-sm-4 team-col">
-<figure>
-	<img src="assets/img/woman.jpg" class="team-img">
-<figcaption>
-	<h3>Alissa Richmond</h3>
-<p class="post-text">
-CEO
-</p>
-<p class="team-about-text">
-M Tech, IIT Delhi
+<?php echo $res1['qualification'];?>
 </p>
 </figcaption>
 </figure>
 </div>
-
+<?php 
+}
+?>
 </div>
 </div>
 </section>
 
  <?php
+
 include 'footer.php';
  ?>

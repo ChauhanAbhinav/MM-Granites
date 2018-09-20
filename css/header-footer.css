@@ -73,6 +73,7 @@ background-color:;
 	height: 100%;
 	padding: 50px;
 	padding-top: 35px;
+	text-align: left;
 }
 .query-block{
 	/*background: blue;*/
@@ -195,3 +196,10 @@ margin-top: 20px;
 .nav-bar-mobile{
 	visibility: visible !important;
 }
+.other-links-list{
+	list-style-type: none;
+	margin-top: 20px;
+
+}
+.other-links-list a {color: #999999;}
+.other-links-list li {padding: 4px;}

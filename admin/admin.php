@@ -25,7 +25,7 @@ if($_SESSION['sid']=="")
           <!-- top tiles -->
      <div class="col-md-12" style="margin-left:30%;">
            <div class="profile_pic">
-             <img src="../assets/img/logo-32.png" style="height:150px;margin-left: 150px" alt="..." class=" profile_img">
+             <img src="../assets/img/logo-32.png" style="height:80px;" alt="..." class=" profile_img">
        </div>
          </div>
      <div class="col-md-12" style="text-align: center;">
