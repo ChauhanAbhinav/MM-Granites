@@ -32,6 +32,31 @@
                          
                     </ul>
                   </li>
+                  <li><a><i class="fa fa-edit"></i>Manage Products <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a href="add-products.php">Add/View Products</a></li>
+                        
+                         
+                         
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-edit"></i>Manage Projects<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        
+                        <li><a href="add-projects.php">Add/View Projects</a></li>
+                        
+                         
+                         
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-envelope"></i>Manage Contact Requests <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        
+                        <li><a href="manage-contact-req.php">View Contact Request</a></li>
+                         
+                         
+                    </ul>
+                  </li>
                 </ul>
               </div>
             </div>
