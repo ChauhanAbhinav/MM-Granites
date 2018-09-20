@@ -51,16 +51,19 @@ include 'header.php';
 <!-- image slider closed -->
 
  <section class="why_us" style="margin-top: 30px;">
+  <?php  
+    include 'config.php';
+    $query="SELECT * FROM `why_us_contents` ORDER BY `id` DESC";
+    $data1=mysqli_query($dbcon,$query);
+    $result1=mysqli_fetch_array($data1);
+    ?>
 <div class="container-fluid">
   	<div class="jumbo">
   		<h4 style=""><strong>Why Us</strong></h4>
   	</div>
   	
- <p class="why_us_text">
-   MM Granites is the leading Indian conglomerate and a global trendsetter in the world of Natural Stone.
-The choice of undertaking the paths less travelled has made all the difference in the success story of M M Granite. The company was established in a simple warehouse  and ever since has been raising the bar with its quality products and superior services.
-
-Today, M M Granite, with a keen aptitude for innovation and skill, inclination towards concurrent technological advancements, and with multiple quarries at Dharmeta, Morwad, Dhariyawad, Banswara in Rajasthan, India, along with quarries in Yên Bái province, Vietnam, has emerged as an undisputed leader in marble mining, processing, and research and technology development across the globe.
+<p class="why_us_text">
+  <?php echo $result1['description'];  ?>
  </p>
 </div>
  </section>
@@ -166,24 +169,25 @@ Today, M M Granite, with a keen aptitude for innovation and skill, inclination t
 		</h5>
 	</center>
 	<div id="testimonial-slider" class="owl-carousel owl-theme" style="margin-top: 20px;margin-bottom: 25px;text-align: center;">
+    <?php 
+   include 'config.php';
+   $q="SELECT * FROM `testimonials`    ";
+   $d=mysqli_query($dbcon,$q);
+   while($res2=mysqli_fetch_array($d))
+   {
+
+
+  ?>
  		<div class="item" >
- 			<table style="margin: auto;"><tr>
- 			<td><img class="client-img" src="assets/img/home.jpg"></td>
- 			<td><spam class="client-qoute">Make your online shopping website livelier and user friendly with our reasonable</spam></td>
- 			</tr></table>
- 		</div>
- 		<div class="item" >
- 			<table style="margin: auto;"><tr>
- 			<td><img class="client-img" src="assets/img/home.jpg"></td>
- 			<td><spam class="client-qoute">Make your online shopping website livelier and user friendly with our reasonable</spam></td>
- 			</tr></table>
- 		</div>
- 		<div class="item" >
- 			<table style="margin: auto;"><tr>
- 			<td><img class="client-img" src="assets/img/home.jpg"></td>
- 			<td><spam class="client-qoute">Make your online shopping website livelier and user friendly with our reasonable</spam></td>
- 			</tr></table>
- 		</div>
+      <table style="margin: auto;"><tr>
+      <td><img class="client-img" src="admin/<?php echo $res2['image']; ?>"></td>
+      <td><spam class="client-qoute"><?php echo $res2['description']; ?></spam></td>
+      </tr></table>
+    </div>
+    <?php
+  }
+  ?>
+  
  	</div>
 </div>
 

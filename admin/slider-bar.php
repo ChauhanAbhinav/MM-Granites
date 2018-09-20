@@ -26,7 +26,7 @@
                   <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
 					              <li><a href="add-whyus.php">Manage Why Us Section</a></li>
-                        <li><a href="manage-testimonials.php">Manage Testimonials</a></li>
+                        <li><a href="add-projects.php">Manage Projects</a></li>
                         <li><a href="manage-contact-req.php">Manage Contact Request</a></li>
                          
                          
@@ -56,12 +56,11 @@
                          
                     </ul>
                   </li>
-                  <li><a><i class="fa fa-envelope"></i>Manage Contact Us <span class="fa fa-chevron-down"></span></a>
+                  <li><a><i class="fa fa-envelope"></i>Manage Contact Requests <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                         
                         <li><a href="manage-contact-req.php">View Contact Request</a></li>
-                        <li><a href="add-address.php">Add/Update Company Address</a></li>
-                        <li><a href="add-communication.php">Add Company Contact No./Email/Facts etc</a></li>
+                         
                          
                     </ul>
                   </li>
