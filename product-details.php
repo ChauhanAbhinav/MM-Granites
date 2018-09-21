@@ -79,7 +79,7 @@ include 'header.php';
 
 <?php 
    include 'config.php';
-   $q="SELECT * FROM `products` order by `id` desc limit 0,6   ";
+   $q="SELECT * FROM `products` order by `id` desc limit 0,4   ";
    $d=mysqli_query($dbcon,$q);
    while($res=mysqli_fetch_array($d))
    {
@@ -87,24 +87,35 @@ include 'header.php';
 
 	?>
 
-<div class=" col-sm-2">
+<div class=" col-sm-3" style="height: 300px;">
 <figure>
 	<a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
 	<img src="admin/<?php echo $res['image'];   ?>" style="height: 150px;width: 100%">
 	</a>
 <figcaption>
 	<a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
-	<h3><?php echo $res['name'];   ?></h3>
+	<h3><?php 
+			if(strlen($res['name']) > 20)
+		echo substr($res['name'],0,20)."...";
+			else
+				echo $res['name'];
+
+		?></h3>
 	</a>
-<p >
+<p>
 
-<?php echo $res['brief'];   ?>
+<?php 
+			if(strlen($res['brief']) > 120)
+		echo substr($res['brief'],0,120)."...";
+			else
+				echo $res['brief'];
 
+		?>
+<br>
+<br>
 </p>
 </figcaption>
 </figure>
-
-
 </div>
 </a>
 <?php  }?>

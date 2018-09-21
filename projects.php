@@ -44,7 +44,7 @@ include 'header.php';
 	</div>
 </section>
 
-<section style="margin-top: 20px;">	
+<section style="margin-top: 30px;">	
 <div class="container-fluid">
 <div class="row">
 
@@ -64,7 +64,7 @@ $p=0;
 else
 {
 	$p=$page;
-$p=($p-1)*8+1;
+$p=($p-1)*8;
 }
  	$q="SELECT * FROM `projects` LIMIT  $p,8";  
 
@@ -82,15 +82,25 @@ else
 	?>
 
 
-<div class=" col-sm-3" style="height: 600px">
+<div class=" col-sm-3" style="height: 400px">
 <figure>
 	<img src="admin/<?php echo $res['image'];   ?>" style="height: 200px;width: 100%">
 <figcaption>
-	<h3><?php echo $res['name'];   ?></h3>
-<p >
+	<h3><?php 
+			if(strlen($res['name']) > 20)
+		echo substr($res['name'],0,20)."...";
+			else
+				echo $res['name'];
 
-<?php echo $res['description'];   ?>
-<br>
+		?>
+	</h3>
+
+<p>
+<?php 
+	if(strlen($res['description']) > 120)
+		echo substr($res['description'],0,120)."...";
+		else echo $res['description'] ;
+?><br>
 <br>
 </p>
 </figcaption>
@@ -119,6 +129,7 @@ else
    
 	?>
 	<div class="jumbo" style="margin-right: -30px;margin-left: -30px;margin-top: 0px;">
+		<strong>Page: </strong>
 		<?php
 		for($i=1;$i<=$row1;$i++)
     {

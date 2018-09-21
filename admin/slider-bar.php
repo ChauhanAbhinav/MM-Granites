@@ -1,7 +1,7 @@
     <div class="col-md-3 left_col">
           <div class="left_col scroll-view"  >
             <div class="navbar nav_title" style="border: 0;">
-              <a href="admin.php" class="site_title"><!-- <i class="fa fa-paw"></i> --><img src="../assets/img/logo-32.png" alt="..." class=" profile_img" style="height: 60px;">
+              <a href="admin.php" class="site_title"><!-- <i class="fa fa-paw"></i> --><img src="../assets/img/logo-32.png" alt="..." class=" profile_img" style="height: 30px;width: 30px;">
               	
               	 <span>MM Granites. Admin!</span></a>
             </div>
@@ -23,7 +23,7 @@
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                  <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                  <li><a><i class="fa fa-home"></i>Manage Home <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
 					              <li><a href="add-whyus.php">Manage Why Us Section</a></li>
                         <li><a href="manage-testimonials.php">Manage Testimonials</a></li>
@@ -48,6 +48,12 @@
                          
                          
                     </ul>
+                  </li>
+                  <li><a><i class="fa fa-edit"></i>Manage About Us<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a href="add-mission.php">Edit Mission</a></li>
+                        <li><a href="add-team-member.php">Edit Team</a></li>
+                       </ul>
                   </li>
                   <li><a><i class="fa fa-envelope"></i>Manage Contact Us <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">

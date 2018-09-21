@@ -105,10 +105,7 @@ font-size:16px;
 .address{
 margin-top: 20px;
 }
-.query-btn{
-	background-color: #e75143;
-	border:none;
-}
+
 .query-form{
 	padding-top: 35px;
 }
@@ -131,7 +128,7 @@ margin-top: 20px;
 	margin-top: -20px;
 	padding: 10px;
 	text-align: center;
-	color: inherit;
+	color: #777777;
     background-color: #eee;
 }
 .menu-icon{
@@ -203,3 +200,20 @@ margin-top: 20px;
 }
 .other-links-list a {color: #999999;}
 .other-links-list li {padding: 4px;}
+.mm-button{
+	background-color: #E8EAED;
+    color: #80868B;
+    border: none;
+    opacity: 1;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 100px;
+    margin-top: 20px;
+    font-size: 15px;
+    outline: none;
+}
+.query-btn{
+	background-color: #e75143;
+	color: black;
+	}

@@ -48,7 +48,7 @@ include 'header.php';
 	</div>
 </section>
 
-<section style="margin-top: 20px;">	
+<section style="margin-top: 30px;">	
 <div class="container-fluid">
 <div class="row">
 
@@ -68,7 +68,7 @@ $p=0;
 else
 {
 	$p=$page;
-$p=($p-1)*8+1;
+$p=($p-1)*8;
 }
  	$q="SELECT * FROM `products` LIMIT  $p,8";  
 
@@ -85,18 +85,30 @@ else
 
 	?>
 
-<div class=" col-sm-3">
+<div class=" col-sm-3" style="height: 300px;">
 <figure>
 	<a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
 	<img src="admin/<?php echo $res['image'];   ?>" style="height: 150px;width: 100%">
 	</a>
 <figcaption>
 	<a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
-	<h3><?php echo $res['name'];   ?></h3>
+	<h3><?php 
+			if(strlen($res['name']) > 20)
+		echo substr($res['name'],0,20)."...";
+			else
+				echo $res['name'];
+
+		?></h3>
 	</a>
 <p>
 
-<?php echo $res['brief'];   ?>
+<?php 
+			if(strlen($res['brief']) > 120)
+		echo substr($res['brief'],0,120)."...";
+			else
+				echo $res['brief'];
+
+		?>
 <br>
 <br>
 </p>
@@ -126,6 +138,7 @@ else
 	?>
 </div>
 <div class="jumbo" style="margin-top: 0px;">
+	<strong>Page:</strong> 
 		<?php
 		for($i=1;$i<=$row1;$i++)
     {

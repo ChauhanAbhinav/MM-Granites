@@ -113,7 +113,7 @@ include 'header.php';
 
  </section>
  <div class="container-fluid">
- 	<div class="jumbo" style="margin-top: 0px;margin-bottom: 20px;">	
+ 	<div class="jumbo" style="margin-top: 0px;margin-bottom: 30px;">	
  		<h4>Our Featured Products</h4>
  		<h5>We Believe in Delivering Quality Products for Self-Satisfaction</h5>
  	</div>
@@ -130,19 +130,32 @@ include 'header.php';
 	?>
 
 
-<div class=" col-sm-3">
+<div class=" col-sm-3" style="height: 300px;">
 <figure>
-	<a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
+  <a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
   <img src="admin/<?php echo $res['image'];   ?>" style="height: 150px;width: 100%">
   </a>
 <figcaption>
-	<a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
-  <h3><?php echo $res['name'];   ?></h3>
+  <a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
+  <h3><?php 
+      if(strlen($res['name']) > 20)
+    echo substr($res['name'],0,20)."...";
+      else
+        echo $res['name'];
+
+    ?></h3>
   </a>
-<p >
+<p>
 
-<?php echo $res['brief'];   ?>
+<?php 
+      if(strlen($res['brief']) > 120)
+    echo substr($res['brief'],0,120)."...";
+      else
+        echo $res['brief'];
 
+    ?>
+<br>
+<br>
 </p>
 </figcaption>
 </figure>
@@ -160,7 +173,7 @@ include 'header.php';
 <div class="col-sm-12 col-md-12">
 
 <center>
-	<a href="products.php"><button class="btn btn-default" style="background-color:#e75143;color:white;  border: none;  zoom:150%;opacity:1">View All Products</button></a>
+	<a href="products.php"><button class="mm-button">View All Products</button></a>
 </center>
 </div>
 		</div>
@@ -185,7 +198,7 @@ include 'header.php';
 
 	?>
  		<div class="item" >
- 			<table style="margin: auto;"><tr>
+ 			<table style="margin: auto;max-width: 650px;height: auto;"><tr>
  			<td><img class="client-img" src="admin/<?php echo $res2['image']; ?>"></td>
  			<td><spam class="client-qoute"><?php echo $res2['description']; ?></spam></td>
  			</tr></table>

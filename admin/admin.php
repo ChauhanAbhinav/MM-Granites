@@ -23,13 +23,14 @@ if($_SESSION['sid']=="")
         <!-- page content -->
         <div class="right_col" role="main" >
           <!-- top tiles -->
-     <div class="col-md-12" style="margin-left:30%;">
-           <div class="profile_pic">
+     <div class="col-md-12" style="">
+           <!-- <div class="profile_pic">
              <img src="../assets/img/logo-32.png" style="height:80px;" alt="..." class=" profile_img">
-       </div>
-         </div>
+            </div> -->
+      </div>
      <div class="col-md-12" style="text-align: center;">
-       <h1 style="font-size:55px;">Welcome, <b style="text-transform: uppercase">MM Granites</b>, Admin</h1>
+       <h1 style="font-size:40px;margin-top: 50px">Admin Panel</h1>
+       <p> A admin panel which provide experience of fully dynamic website.</p>
       </div>
      </div>
         <!-- /page content -->

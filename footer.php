@@ -40,7 +40,7 @@ include 'config.php';
 		   			<li ><a href="products.php">Products</a></li>
 		   			<li ><a href="projects.php"> Projects</a></li>
 		   			<li ><a href="aboutus.php">About Us</a></li>
-		   			<li ><a href="contactus.php">Contact US</a></li>
+		   			<li ><a href="contact.php">Contact US</a></li>
 		   		</ul>
 		   </div> 
 		</div>
@@ -59,16 +59,16 @@ include 'config.php';
             <textarea rows="4" cols="20" placeholder="Your Query" name="message" class="form-control">  </textarea>
   			</div>
 			<div class="form-group">
-				<input type="submit" name="query-submit" class="btn btn-default query-btn">
+				<input type="submit" name="query-submit" class="mm-button query-btn">
 			</div>
 			</form>
 		</div>
 		<div class="col-sm-4 social-block">
 			<span class="footer-heading">Social Links</span>
 			<div class="social-icon-block">
-				<img src="assets/img/fb.png" class="social-icon">
-				<img src="assets/img/twitter.png" class="social-icon">
-				<!-- <img src="assets/img/fb.png" class="social-icon"> -->
+				<a href="#"><img src="assets/img/fb.png" class="social-icon"></a>
+				<a href="#"><img src="assets/img/twitter.png" class="social-icon"></a>
+				<a href="#"><img src="assets/img/insta.png" class="social-icon"></a>
 			</div>
 		</div>
 	</div>

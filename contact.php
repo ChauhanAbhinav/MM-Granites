@@ -61,7 +61,7 @@ include 'header.php';
 <section>
 	<div class="container-fluid">
     
-        <div class="jumbo" style="margin-top: 0px;margin-bottom: 30px;">
+        <div class="jumbo" style="margin-top: 0px;margin-bottom: 50px;">
         <h4>Get in Touch</h4>
       </div>
 	
@@ -81,7 +81,7 @@ include 'header.php';
            	<textarea rows="7" cols="20" placeholder="Your Query" name="message" class="form-control"></textarea>
              </div>
              <div class="form-group">
-             <input type="submit" name="contact_submit" class="btn btn-default" style="background-color: #e75143;">
+             <input type="submit" name="contact_submit" class="mm-button" style="background-color: #e75143;color: black;">
 
              </div>
         </form>
@@ -134,7 +134,7 @@ include 'header.php';
 
 </div>
 </section>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.99973645076!2d75.65047130354301!3d26.885141678596714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C+Rajasthan!5e0!3m2!1sen!2sin!4v1537271082739" width="100%" height="350" frameborder="0" style="border:0;margin-bottom: -5px;" allowfullscreen></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.99973645076!2d75.65047130354301!3d26.885141678596714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C+Rajasthan!5e0!3m2!1sen!2sin!4v1537271082739" width="100%" height="350" frameborder="0" style="border:0;margin-bottom: -5px;margin-top: 30px;" allowfullscreen></iframe>
  <?php
 include 'footer.php';
  ?>
