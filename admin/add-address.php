@@ -23,7 +23,7 @@
 	extract($_POST);
 	if(isset($_POST['add_image']))
 	{
-       		$query="INSERT INTO `company_address`(`id`,`add_1`,`add_2`,`add_3`,`add_4`,`add_5`) VALUES ('','".$add_1."','".$add_2."','".$add_3."','".$add_4."','".$add_5."')";
+       		$query="INSERT INTO `company_address`(`add_1`,`add_2`,`add_3`,`add_4`,`add_5`) VALUES ('".$add_1."','".$add_2."','".$add_3."','".$add_4."','".$add_5."')";
 			mysqli_query($dbcon,$query) or die(mysqli_error($dbcon));
 			$empty="File Uploaded Successfully";
     }	

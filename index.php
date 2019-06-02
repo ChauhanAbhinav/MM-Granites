@@ -4,18 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MM Granites</title>
-<link rel="apple-touch-icon" sizes="180x180" href="assets/img/logo-32.png">
-    <link rel="icon" type="image/png" href="assets/img/logo-32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="assets/img/logo-32.png" sizes="16x16">
-
+    <link rel="icon" type="image/svg" href="assets/mmg logo.svg" sizes="16x16">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet"> 
 <link rel="stylesheet" type="text/css" href="css/main.css">
-<link rel="stylesheet" type="text/css" href="css/header-footer.css">
-<link rel="stylesheet" href="lib/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="css/header-footer.css">    
+
+<link rel="stylesheet" href="lib/owl.carousel.min.css">
 <link rel="stylesheet" href="lib/owl.theme.css">
 <link rel="stylesheet" href="lib/owl.transitions.css">
-
-		
 </head>
 <body>
 <?php 
@@ -23,31 +20,52 @@ include 'header.php';
 ?>
 <!-- image slider -->
 
-<div id="home-slider" class="owl-carousel owl-theme">
- 
-  <div class="item"><img src="assets/img/home.jpg">
-  	<div id="banner">
-  		<center>
-			<p id="banner_head">Welcome to the MM Granites Pvt Lt</p>
-			<h3 id="banner_tagline" style="color:white">
-				We are the one of leader dealers in all kinds of marble product designs across Rajasthan.
-			</h3>	
-		</center>
-  	</div>
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="assets/img/home.png" alt="..." class="slider-img">
+      <div class="carousel-caption">
+        <h1>MM GRANITES</h1>
+        <span>WE BUILD YOUR DREAMS</span>
+      </div>
+    </div>
+    <div class="item">
+      <img src="assets/img/home2.png" alt="..." class="slider-img">
+      <div class="carousel-caption">
+       <h1>WE DELIVER </h1>
+       <span>AWESOME PRODUCTS TO OUR CUSTOMER</span>
+      </div>
+    </div>
+   <div class="item">
+      <img src="assets/img/home3.png" alt="..." class="slider-img">
+      <div class="carousel-caption">
+       <h1>WE PROVIDE </h1>
+       <span>AWESOME IDEAS</span>
+      </div>
+    </div>
   </div>
-  
-  <div class="item"><img src="assets/img/home2.jpg" >
-  	<div id="banner-small">
-  		<span class="banner-item"> Grenite</span>
-  	</div>
-  </div>
-  <div class="item"><img src="assets/img/home3.jpg">
-  	<div id="banner-small"><span class="banner-item"> Ceremic Products</span></div>
-  </div>
- 
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
 
- </section>
+ 
 <!-- image slider closed -->
 
  <section class="why_us" style="margin-top: 30px;">
@@ -58,7 +76,7 @@ include 'header.php';
     $result1=mysqli_fetch_array($data1);
     ?>
 <div class="container-fluid">
-  	<div class="jumbo">
+  	<div class="jumbo" style="color:#555555;">
   		<h4 style=""><strong><?php echo $result1['heading'];  ?></strong></h4>
   	</div>
   	
@@ -67,7 +85,7 @@ include 'header.php';
  </p>
 </div>
  </section>
-
+<div class="quality">
  <section style="background-image:url('assets/img/work.jpg'); background-position: center;">
  	<div class="container-fluid" style="background-color: rgba(0,0,0,0.5);padding-top:20px;padding-bottom: 20px;">
 <div class="col-md-4 col-sm-12">
@@ -78,9 +96,7 @@ include 'header.php';
 </center>
 <center style="color: white;"><strong><h4>High Quality</strong></h4></center>
 <p style="color: white;padding-top: 20px;">
-	Distributed under the Lesser General Public License
-  This program is distributed in the hope that it will be useful without even the implied warranty.  
-  This program is distributed in the hope that it will be useful without even the implied warranty.  
+	MM Granites is recognized for the quality of its stones. They have been developing steadly over time, earning considerable significance in the rajasthan marble industries today.
 </p>
 </div>
 <div class="col-md-4 col-sm-12">
@@ -89,11 +105,9 @@ include 'header.php';
 	<img src="assets/img/strength.png" style="zoom:60%">
 	</div>
 </center>
-<center style="color: white;"><strong><h4>High Quality</strong></h4></center>
+<center style="color: white;"><strong><h4>High Quantity</strong></h4></center>
 <p style="color: white;padding-top: 20px;">
-	Distributed under the Lesser General Public License
-  This program is distributed in the hope that it will be useful without even the implied warranty.  
-  This program is distributed in the hope that it will be useful without even the implied warranty.  
+	MM Granites has been first choice for procuring natural stones for our projects, big or small, having a availability of wide range of stones.
 </p>
 </div>
 <div class="col-md-4 col-sm-12">
@@ -102,88 +116,22 @@ include 'header.php';
 	<img src="assets/img/hammer.png" style="zoom:60%">
 	</div>
 </center>
-<center style="color: white;"><strong><h4>High Quality</strong></h4></center>
+<center style="color: white;"><strong><h4>High Durability</strong></h4></center>
 <p style="color: white;padding-top: 20px;">
-	Distributed under the Lesser General Public License
-  This program is distributed in the hope that it will be useful without even the implied warranty.  
-  This program is distributed in the hope that it will be useful without even the implied warranty.  
+  MM granites provides very dense stone which makes it very durable and reliable material to use for any room. It can be installed everywhere in your home, office, kitchen, lobby etc.	
 </p>
 </div>
 
 
  </section>
- <div class="container-fluid">
- 	<div class="jumbo" style="margin-top: 0px;margin-bottom: 30px;">	
- 		<h4>Our Featured Products</h4>
- 		<h5>We Believe in Delivering Quality Products for Self-Satisfaction</h5>
- 	</div>
- 		<div class="row" id="row2">
-			
-<?php 
-   include 'config.php';
-   $q="SELECT * FROM `products` order by `id` desc limit 0,4   ";
-   $d=mysqli_query($dbcon,$q);
-   while($res=mysqli_fetch_array($d))
-   {
-
-
-	?>
-
-
-<div class=" col-sm-3" style="height: 300px;">
-<figure>
-  <a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
-  <img src="admin/<?php echo $res['image'];   ?>" style="height: 150px;width: 100%">
-  </a>
-<figcaption>
-  <a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
-  <h3><?php 
-      if(strlen($res['name']) > 20)
-    echo substr($res['name'],0,20)."...";
-      else
-        echo $res['name'];
-
-    ?></h3>
-  </a>
-<p>
-
-<?php 
-      if(strlen($res['brief']) > 120)
-    echo substr($res['brief'],0,120)."...";
-      else
-        echo $res['brief'];
-
-    ?>
-<br>
-<br>
-</p>
-</figcaption>
-</figure>
-
-
 </div>
-<?php  }?>
-			
+ 
 
-			
-			
-			
-		</div>
-		<div class="row">
-<div class="col-sm-12 col-md-12">
-
-<center>
-	<a href="products.php"><button class="mm-button">View All Products</button></a>
-</center>
-</div>
-		</div>
-		
-		</div>
-
- <div class="container-fluid" style="background-color: rgba(240,240,240,0.8);color: black;margin-top: 30px;">
+<div class="container-fluid" style="background-color: rgba(240,240,240,0.8);color: black;margin-top: 30px;">
+<!-- 
  	<center>
- 		<h4 style="padding: 20px;"><strong>Our Happy Clients</strong></h4>
- 		<h5>Many Satisfied Customer Trust <strong>MM Granites</strong>
+ 		<h4 style="padding: 20px;color: #555555"><strong>Our Happy Clients</strong></h4>
+ 		<h5 style="color: #666666">Many Satisfied Customer Trust <strong>MM Granites</strong>
         Products & Services.
 		</h5>
 	</center>
@@ -208,32 +156,20 @@ include 'header.php';
  	?>
  		
  	</div>
+!-->
 </div>
+
 
 <?php
 include 'footer.php';
  ?>
-<script src="lib/jquery.min.js"></script>
-<script src="lib/owl.carousel.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
- 
-  $("#home-slider").owlCarousel({
- 
-      navigation : true,
-      slideSpeed : 300,
-      paginationSpeed : 400,
-      singleItem:true,
- 	  autoPlay:true
- });
-$("#testimonial-slider").owlCarousel({
-  	  navigation : true,
-      slideSpeed : 100,
-      paginationSpeed : 400,
-      singleItem:true,
- 	  autoPlay:true
-  }); 
-});
-</script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/owl.carousel.min.js"></script>
+   <script src="lib/script.js"></script>
+
 </body>
 </html>

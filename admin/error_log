@@ -475,3 +475,15 @@
 [12-Jul-2017 15:53:51 Etc/GMT] PHP Notice:  Undefined variable: path9 in /home/autokgnw/public_html/admin/insert-product.php on line 108
 [12-Jul-2017 15:53:51 Etc/GMT] PHP Notice:  Undefined variable: path10 in /home/autokgnw/public_html/admin/insert-product.php on line 108
 [13-Jul-2017 06:58:24 Etc/GMT] PHP Notice:  Undefined index: name in /home/autokgnw/public_html/admin/index.php on line 15
+[21-Sep-2018 18:29:48 UTC] PHP Notice:  Undefined index: name in /home/dxe2dh6vyuun/public_html/mmgranites/admin/index.php on line 16
+[21-Sep-2018 18:42:02 UTC] PHP Notice:  Undefined index: name in /home/dxe2dh6vyuun/public_html/mmgranites/admin/index.php on line 16
+[21-Sep-2018 20:39:52 UTC] PHP Notice:  Undefined index: name in /home/dxe2dh6vyuun/public_html/mmgranites/admin/index.php on line 16
+[21-Sep-2018 20:41:10 UTC] PHP Notice:  Undefined index: name in /home/dxe2dh6vyuun/public_html/mmgranites/admin/index.php on line 16
+[22-Sep-2018 07:43:19 UTC] PHP Notice:  Undefined index: name in /home/dxe2dh6vyuun/public_html/mmgranites/admin/index.php on line 16
+[22-Sep-2018 12:00:54 UTC] PHP Notice:  Undefined index: name in /home/dxe2dh6vyuun/public_html/mmgranites/admin/index.php on line 16
+[22-Sep-2018 12:29:14 UTC] PHP Notice:  Undefined index: name in /home/dxe2dh6vyuun/public_html/mmgranites/admin/index.php on line 16
+[23-Sep-2018 14:41:30 UTC] PHP Notice:  Undefined index: name in /home/dxe2dh6vyuun/public_html/mmgranites/admin/index.php on line 16
+[21-Nov-2018 18:30:19 UTC] PHP Notice:  Undefined index: name in /home/dxe2dh6vyuun/public_html/mmgranites/admin/index.php on line 16
+[20-Dec-2018 12:36:56 UTC] PHP Notice:  Undefined index: name in /home/dxe2dh6vyuun/public_html/mmgranites/admin/index.php on line 16
+[26-Dec-2018 18:51:31 UTC] PHP Notice:  Undefined index: name in /home/dxe2dh6vyuun/public_html/mmgranites/admin/index.php on line 16
+[26-Dec-2018 19:10:36 UTC] PHP Notice:  Undefined index: name in /home/dxe2dh6vyuun/public_html/mmgranites/admin/index.php on line 16

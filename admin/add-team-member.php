@@ -36,7 +36,7 @@ if($_SESSION['sid']=="")
 		$path = "team_images/" . $_FILES['image']['name'];
     	move_uploaded_file($_FILES['image']['tmp_name'], $path);
 	if ($_FILES['image']['tmp_name'] != '' ) {
-       		$query="INSERT INTO `team` (`id`,`name`,`profile_photo`,`designation`,`qualification`) VALUES ('','".addslashes($name)."','".$path."','".$designation."','".$qualification."')";
+       		$query="INSERT INTO `team` (`name`,`profile_photo`,`designation`,`qualification`) VALUES ('".addslashes($name)."','".$path."','".$designation."','".$qualification."')";
 			mysqli_query($dbcon,$query) or die(mysqli_error($dbcon));
 			$empty="File Uploaded Successfully";
     }	

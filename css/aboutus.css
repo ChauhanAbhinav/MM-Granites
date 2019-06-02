@@ -9,13 +9,17 @@
 }
 .post-text{
 	font-size: 12px;
-	font-weight: 700;
 }
 .team-about-text{
 	margin-top: -7px;
+	font-size: 12px;
 }
 .our-mission-text{
-	padding-top: 20px;
-	padding-bottom: 20px;
-	font-weight:;
+letter-spacing: 2px;
+    text-align: justify;
+    padding: 20px 40px;
+    word-spacing: 2px;
+    text-indent: unset;
+    line-break: 5px;
+    line-height: 26px;
 }

@@ -8,11 +8,16 @@
 }
 .why_us_text
 {
-	color: black;
-	/*font-size: 18px;*/
-	padding-top:30px;
-	padding-bottom: 20px; 	
+	    letter-spacing: 2px;
+    text-align: justify;
+    padding: 20px 40px;
+    word-spacing: 2px;
+    text-indent: unset;
+    line-break: 5px;
+    line-height: 26px;
+   
 }
+
 .item{
 	position: relative;
 }
@@ -47,64 +52,6 @@ background-color: rgba(0,0,0,.4);
  	color: white;
  	font-size: 20px;
  }
-			#para1
-			{
-				font-family: cursive;
-				
-			}
-			.readmore
-			{
-				font-family:cursive;
-				font-style:oblique;
-				font-weight: 900;
-			}
-			#readmore1
-			{
-				font-size: 2em;
-				font-family: cursive;
-				
-			}
-			#readmoreecomm
-			{
-				font-size: 2em;
-				font-family: cursive;
-				
-			}
-			
-			
-			#proread3
-			{
-				font-size: 2em;
-				font-family: cursive;
-				
-			}
-			#proread4
-			{
-				font-size: 2em;
-				font-family: cursive;
-				
-			}
-			#wbd1
-			{
-				height: 200px;
-				width: 200px;
-			}
-			#readmore3
-			{
-				display: none;
-			}
-			#readmoreecom
-			{
-				display:none;
-			}
-			#product3
-			{
-				display: none;
-			}
-			#product4
-			{
-				display: none;
-			}
 #home-slider .item img{
     display: block;
     width: 100%;
@@ -117,7 +64,7 @@ background-color: rgba(0,0,0,.4);
 .client-qoute{
 	padding-left: 20px;
 	color: #777777;
-	text-align: left;
+	text-align:justify;
 	float: left;
 }
 @media screen and (max-width: 760px){
@@ -150,3 +97,6 @@ background-color: rgba(0,0,0,.4);
 	font-size:13px;
 	}
 } 
+.slider-img{
+	width: 100%;height: auto;
+}

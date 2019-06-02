@@ -5,7 +5,7 @@ if(isset($_POST['query-submit']))
 include 'config.php';
   extract($_POST);
  
-  $q1="INSERT INTO `contact`(`id`,`email`,`mobile`,`message`) VALUES ('','".$email."','".$mobile."','".$message."')";
+  $q1="INSERT INTO `contact`(`email`,`mobile`,`message`) VALUES ('".$email."','".$mobile."','".$message."')";
   $d1=mysqli_query($dbcon,$q1);
   if(mysqli_affected_rows($dbcon)>0)
   {
@@ -28,11 +28,11 @@ include 'config.php';
 	<div class="row inside-footer">
 		<div class="col-sm-4 address-block">
 			<div class="logo-wrapper-footer">
-				<img class="logo" src="assets/img/logo-32.png">
+				<img class="logo" src="assets/mmg logo.svg">
 				<span class="mmGranites mmGranites-footer">MM Granites</span>
 			</div>
 			<div class="address">
-				Nullam ac tortor ut massa fringilla semper non sit amet purus. Donec non nisl non dolor ultrices aliquam. Phasellus elementum sapien sed blandit finibus.
+				MM (MINES LAKHA) Group – the company with 20 year of business experience in “Granites Block, Granites Slabs Making, ” & “Whole Sells”. MM Group  founded in 1996.Serves qualitative & satisfactory output to the customers through more than 5 Type Of Finishing.
 		    </div>	
 		   <div class="other-links">
 		   		<ul class="other-links-list">
@@ -45,22 +45,29 @@ include 'config.php';
 		   </div> 
 		</div>
 		<div class="col-sm-4 query-block">
-			<span class="footer-heading">Enquery</span>
+			<span class="footer-heading">Enquiry</span>
 			<form action="#" method="post" class="query-form">
 				<div class="form-group">
-            <input type="number" name="mobile" class="form-control" placeholder="Enter Mobile No.">
+            <input type="number" name="mobile" class="form-control" placeholder="Enter Mobile No." min="6000000000" max="9999999999" required="required">
  
 			</div>
 			<div class="form-group">
-            <input type="email" name="email" class="form-control" placeholder="Enter Email">
+            <input type="email" name="email" class="form-control" placeholder="Enter Email" required="required">
  
 			</div>
 			<div class="form-group">
-            <textarea rows="4" cols="20" placeholder="Your Query" name="message" class="form-control">  </textarea>
+            <textarea rows="4" cols="20" placeholder="Your Query" name="message" class="form-control" required>  </textarea>
   			</div>
 			<div class="form-group">
 				<input type="submit" name="query-submit" class="mm-button query-btn">
 			</div>
+		
+		
+			
+			
+			
+			
+			
 			</form>
 		</div>
 		<div class="col-sm-4 social-block">

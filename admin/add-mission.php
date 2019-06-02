@@ -23,7 +23,7 @@
 	extract($_POST);
 	if(isset($_POST['add_mission']))
 	{
-       		$query="INSERT INTO `mission`(`id`,`heading`,`content`) VALUES ('','".$heading."','".addslashes($content)."')";
+       		$query="INSERT INTO `mission`(`heading`,`content`) VALUES ('".$heading."','".addslashes($content)."')";
 			mysqli_query($dbcon,$query) or die(mysqli_error($dbcon));
 			$empty="mission added Successfully";
     }	

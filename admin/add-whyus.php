@@ -23,7 +23,7 @@
 	extract($_POST);
 	if(isset($_POST['add_image']))
 	{
-       		$query="INSERT INTO `why_us_contents`(`id`,`heading`,`description`) VALUES ('','".$heading."','".addslashes($description)."')";
+       		$query="INSERT INTO `why_us_contents`(`heading`,`description`) VALUES ('".$heading."','".addslashes($description)."')";
 			mysqli_query($dbcon,$query) or die(mysqli_error($dbcon));
 			$empty="File Uploaded Successfully";
     }	

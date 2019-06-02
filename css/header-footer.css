@@ -1,3 +1,10 @@
+body{
+	margin:0;
+	padding:0;
+	margin-top: 100px;
+	font-family: 'Merriweather Sans', sans-serif;
+	text-align: justify;
+}
 a{
 	color: #777777;
 	text-decoration: none;
@@ -10,20 +17,20 @@ a:active {
     color: #e75143;
 }
 .header{
-	/*margin-left: -15px;*/
-  	/*margin-right:-15px;*/
-	height: 50px;
+	margin-top: -100px;
+  	height: 100px;
 	width: 100%;
 	background-color: #f8fafb;
-	padding: 10px;
+	padding: 25px;
 	box-sizing: border-box;
-	position: relative;
+	position: fixed;
+	z-index: 99;
 	
 }
 .header-inside{
 width:100%;
-height: 30px;
-padding-left:40px;
+height: 50px;
+padding-left:30px;
 background-color:; 
 }
 .logo-wrapper{
@@ -35,8 +42,8 @@ background-color:;
 }
 .logo{
 	display: inline;
-	height: 30px;
-	width:30px;
+	height: 50px;
+	width:50px;
 }
 .mmGranites{
 	padding-left: 10px;
@@ -47,13 +54,15 @@ background-color:;
 .nav-bar{
 	font-size: 15px;
 	font-weight: 700;
-	min-height: 30px;
+	height: 50px;
 	min-width: 55%;
 	display: flex;
 	float: right;
 	justify-content: space-around;
   	align-items: center;
-}
+  	padding-top: 10px;
+  	padding-bottom: 10px;
+  	}
 .active-nav-link{
 	 color: #e75143;
 }
@@ -61,7 +70,7 @@ background-color:;
 	background-color: #2f3333;
 	width: 100%;
 	min-height:350px; 
-	color: #999999;
+	color: #888888;
 	text-align: center;
 }
 .inside-footer{
@@ -103,7 +112,7 @@ font-weight: 700;
 font-size:16px;
 }
 .address{
-margin-top: 20px;
+margin-top: 20px;text-align: justify;
 }
 
 .query-form{
@@ -133,7 +142,7 @@ margin-top: 20px;
 }
 .menu-icon{
 	position: absolute;
-	top: 15px;right: 20px;
+	top: 37px;right: 25px;
 	font-size: 18px;
 	font-weight: 999;
 	color: #e75143;
@@ -170,7 +179,7 @@ margin-top: 20px;
 	}
 	.menu-icon{display: inline;}
 	.header-inside{
-		padding-left: 15px;
+		padding-left: 0px;
 	}
 }
 @media only screen and (max-width: 768px){
@@ -189,6 +198,10 @@ margin-top: 20px;
 	.social-icon-block{
 		padding: 10px;
 	}
+	.other-links-list li{
+		text-align: center;
+	}
+	.other-links-list{padding: 0px;}
 }
 .nav-bar-mobile{
 	visibility: visible !important;
@@ -198,7 +211,7 @@ margin-top: 20px;
 	margin-top: 20px;
 
 }
-.other-links-list a {color: #999999;}
+.other-links-list a {color: #888888;}
 .other-links-list li {padding: 4px;}
 .mm-button{
 	background-color: #E8EAED;

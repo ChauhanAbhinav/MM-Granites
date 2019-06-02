@@ -1,8 +1,8 @@
 <?php 
-$did=$_GET['prod_id'];
+/*$did=$_GET['prod_id'];*/
 include 'config.php';
 
-$query="SELECT * FROM `products` WHERE `id`='".$did."' ";
+$query="SELECT * FROM `products` ORDER BY `id` DESC ";
 $data=mysqli_query($dbcon,$query);
 $res2=mysqli_fetch_array($data);
 
@@ -16,10 +16,9 @@ $res2=mysqli_fetch_array($data);
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MM Granites</title>
-<link rel="apple-touch-icon" sizes="180x180" href="assets/img/logo-32.png">
-    <link rel="icon" type="image/png" href="assets/img/logo-32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="assets/img/logo-32.png" sizes="16x16">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,800" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/css_product.css">
 <link rel="stylesheet" type="text/css" href="css/header-footer.css">
 </head>
@@ -29,7 +28,7 @@ $res2=mysqli_fetch_array($data);
 include 'header.php';
 ?>
 
-<section style="background-image: url('assets/img/products.jpg');height:150px ">
+<section class="banner-section" style="background-image: url('assets/img/products.jpg');height:150px ">
 <div class="container-fluid" id="product_banner"> 
 	<div class="row">
 		<div class="col-sm-3">
@@ -45,22 +44,52 @@ include 'header.php';
 <section>
 				<div class="container-fluid">
 				<div class="jumbo">
-					<h4>Our Products are Our Main Strength</h4>
+					<h4><strong>Our Products are Our Main Strength</strong></h4>
 				</div>
 				</div>
 </section>
+<script>
+function changeImage(a)
+{
+var image=a;
 
+document.getElementById("big_img").src=a;
+
+}
+
+</script>
 <section style="margin-top: 20px;">	
 <div class="container">
 <div class="row">
 <div class="col-sm-6">
-<figure>
-	<img src="admin/<?php echo $res2['image'] ?>" style="width: 100%">
+	<figure>
+		<img src="assets/img/prd1.jpg" id="big_img" style="margin: 0px auto;" class="img-responsive">
+	</figure>
 
-</figure>
-
-
+	<div class="row" style="margin-top:20px">
+		<div class="col-xs-3">
+			<figure>
+				<img class="sm_img1 img-responsive" src="assets/img/prd1.jpg" onclick="return changeImage('assets/img/prd1.jpg')" style="height:100px;cursor:pointer;" title="Click for Larger Image">
+			</figure>
+		</div>
+		<div class="col-xs-3 ">
+			<figure>
+				<img class="sm_img1 img-responsive" src="assets/img/prd2.jpg" onclick="return changeImage('assets/img/prd2.jpg')" style="height:100px;cursor:pointer" title="Click for Larger Image" >
+			</figure>
+		</div>
+		<div class="col-xs-3 ">
+			<figure>
+			<img class="sm_img1 img-responsive" src="assets/img/prd3.jpg" onclick="return changeImage('assets/img/prd3.jpg')" style="	height:100px;cursor:pointer" title="Click for Larger Image">
+			</figure>
+		</div>
+		<div class="col-xs-3 ">
+			<figure>
+				<img class="sm_img1 img-responsive" src="assets/img/prd4.jpeg" onclick="return changeImage('assets/img/prd4.jpeg')" style="height:100px;cursor:pointer" title="Click for Larger Image" >
+			</figure>
+		</div>
+	</div> 
 </div>
+
 <div class="col-sm-6">
 <h2><?php echo $res2['name'] ?></h2>
 <br>
@@ -68,61 +97,35 @@ include 'header.php';
 	<?php echo $res2['description'] ?>
 </p>
 </div>
+</div>
+<div class="row" style="margin-top: 40px;">
+	<div class="col-sm-4">
+	<figure>
+		<img src="assets/img/prdmm1.jpeg" id="prd_size_img" style="margin: 0px auto;" class="img-responsive">
+	</figure>
+	<figcaption class="prd_caption"> 18mm-20mm</figcaption>
+	</div>
+	<div class="col-sm-4">
+	<figure>
+		<img src="assets/img/prdmm2.jpeg" id="prd_size_img" style="margin: 0px auto;" class="img-responsive">
+	</figure>
+	<figcaption class="prd_caption"> 70mm-80mm</figcaption>
+	
+	</div>
+	<div class="col-sm-4">
+	<figure>
+		<img src="assets/img/prdmm3.jpeg" id="prd_size_img" style="margin: 0px auto;" class="img-responsive">
+	</figure>
+	<figcaption class="prd_caption"> 200mm-210mm</figcaption>
+	</div>
+</div>
 
 </div>
-</div>
-
-<div class="container-fluid">
-<div class="jumbo" style="margin-top: 20px;margin-bottom: 20px;margin:;">
-<h4>Recent Products</h4>
-</div>
-
-<?php 
-   include 'config.php';
-   $q="SELECT * FROM `products` order by `id` desc limit 0,4   ";
-   $d=mysqli_query($dbcon,$q);
-   while($res=mysqli_fetch_array($d))
-   {
-
-
-	?>
-
-<div class=" col-sm-3" style="height: 300px;">
-<figure>
-	<a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
-	<img src="admin/<?php echo $res['image'];   ?>" style="height: 150px;width: 100%">
-	</a>
-<figcaption>
-	<a href="product-details.php?prod_id=<?php echo $res['id'];    ?>">
-	<h3><?php 
-			if(strlen($res['name']) > 20)
-		echo substr($res['name'],0,20)."...";
-			else
-				echo $res['name'];
-
-		?></h3>
-	</a>
-<p>
-
-<?php 
-			if(strlen($res['brief']) > 120)
-		echo substr($res['brief'],0,120)."...";
-			else
-				echo $res['brief'];
-
-		?>
-<br>
-<br>
-</p>
-</figcaption>
-</figure>
-</div>
-</a>
-<?php  }?>
-
-</section>
+</section >
+<section style="margin-top:20px">
  <?php
 include 'footer.php';
  ?>
+ </section>
 </body>
 </html>

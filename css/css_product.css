@@ -4,3 +4,11 @@ height: 100%;
 width:100%;
 background-color: rgba(0,0,0,.6);
  }
+ .sm_img1{
+ 	height: 100%;width:auto;
+ }
+ .prd_caption{
+ 	text-align: center;
+ 	font-weight: 700;
+ 	padding: 10px;
+ }

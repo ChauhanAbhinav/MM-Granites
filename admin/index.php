@@ -45,33 +45,21 @@ if(isset($_POST['login']))
     <link href="build/css/custom.min.css" rel="stylesheet">
   </head>
 
-  <body class="login" style="background-color:  #EDEDED;">
-   <div class="container-fluid" style="margin-right:-15px;margin-left: -15px">
-    <div class="row">
-      <div class="col-sm-12" style="background-color:#2A3F54;width: 100% ">
-      
-<div class="col-sm-12">
+<body class="login" style="background-color:  #EDEDED;">
+<div class="container-fluid" style="padding-left: 10px;padding-right:  10px;">
+<div class="row">
+  <div class="col-xs-12" style="background-color:#2A3F54;width: 100%;padding-left: 0px;padding-right: 0px; ">
  <!-- top tiles -->
-     
-           
-           <center>  <img src="../assets/img/logo-32.png" style="height:40px;" alt="..." class=" profile_img"> <p style="font-size:25px;color:white"><b style="text-transform: uppercase">MM Granites</b></p>
-                  
+            <center style="padding-top:5px;">  <img src="../assets/img/logo-32.png" style="height:35px;padding:5px;" alt="..." class=" profile_img"> 
+           <span style="font-size:20px;color:white"><b style="text-transform: uppercase">MM Granites</b></span>
            </center>
-       
-        
-      <center> <h3 style="font-size:25px;color:white">Admin Login</h3></center>
-     
-
+            <center> <h3 style="font-size:15px;color:white">Admin Login</h3></center>
+  </div>
 </div>
-       </div>
-    </div>
- <div class="row">
 
-<div class="col-sm-4 col-md-4 col-lg-4">
+<div class="row">
+<div class="col-xs-12">
 
-</div>
-<div class="col-sm-4 col-md-4 col-lg-4">
-<div>
       <a class="hiddenanchor" id="signup"></a>
       <a class="hiddenanchor" id="signin"></a>
       <div class="login_wrapper">
@@ -88,25 +76,22 @@ if(isset($_POST['login']))
               <div style="margin-left:25%">
                 <input class="btn btn-default submit" type="submit" name="login" id="login" value="Login">
               </div>
-        <div class="clearfix"></div>
+            <div class="clearfix"></div>
               <div class="separator">
-          <div class="text-center"><?php echo @$wrong_id_pw;?></div>
+            <div class="text-center"><?php echo @$wrong_id_pw;?></div>
                 <p class="change_link"><a href="../index.php">Visit MM Granites Website</a></p>
-                
-
-              </div>
+            </div>
                <hr>
             </form>
           </section>
         </div>
       </div>
-    </div>
-  </div>
   
-    </div>
-
-   </div>
-  </body>
+  </div>
+</div>
+  
+</div>
+</body>
 </html>
 
 

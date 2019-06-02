@@ -36,7 +36,7 @@ if($_SESSION['sid']=="")
 		$path = "testimonials_images/" . $_FILES['image']['name'];
     	move_uploaded_file($_FILES['image']['tmp_name'], $path);
 	if ($_FILES['image']['tmp_name'] != '' ) {
-       		$query="INSERT INTO `testimonials` (`id`,`image`,`description`) VALUES ('','".$path."','".$description."')";
+       		$query="INSERT INTO `testimonials` (`image`,`description`) VALUES ('".$path."','".$description."')";
 			mysqli_query($dbcon,$query) or die(mysqli_error($dbcon));
 			$empty="File Uploaded Successfully";
     }	

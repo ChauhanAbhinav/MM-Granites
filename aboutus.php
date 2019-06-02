@@ -4,11 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MM Granites</title>
-<link rel="apple-touch-icon" sizes="180x180" href="assets/img/logo-32.png">
-    <link rel="icon" type="image/png" href="assets/img/logo-32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="assets/img/logo-32.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="assets/mmg logo.svg" sizes="16x16">
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet"> 
 <link rel="stylesheet" type="text/css" href="css/css_product.css">
 <link rel="stylesheet" type="text/css" href="css/header-footer.css">
 <link rel="stylesheet" type="text/css" href="css/aboutus.css">
@@ -19,7 +18,7 @@
 include 'header.php';
 ?>
 
-<section style="background-image: url('assets/img/about.jpg');height:150px ">
+<section class="banner-section" style="background-image: url('assets/img/about.jpg');height:150px ">
 <div class="container-fluid" id="product_banner"> 
 <div class="row">
 <div class="col-sm-3">
@@ -38,11 +37,11 @@ include 'header.php';
   	$res=mysqli_fetch_array($d);
 	?>
 
-	<h4><?php echo $res['heading'] ?></h4>
+	<h4 style="color: #555555;"><strong><?php echo $res['heading'] ?></strong></h4>
 	</div>
 	<div class="row">
 		<div class="col-sm-12 our-mission-text">
-			<span class="">
+			<span>
 				<p><?php echo $res['content']?></p>
 			</span>
 		</div>
@@ -53,7 +52,7 @@ include 'header.php';
 <section style="margin-top: 20px;">
 	<div class="container-fluid">
 	<div class="jumbo">
-		<h3>Our Team</h3>
+		<h4 style="color: #555555;"><strong>Our Team</strong></h4>
 		<h5>Pillers of our company</h5>
 	</div>
 	</div>
@@ -68,11 +67,11 @@ $q1="SELECT * FROM `team`";
   	while($res1=mysqli_fetch_assoc($d1))
   	 {
 	?>
-<div class="col-sm-4 team-col">
+<div class="col-sm-4 col-sm-offset-4 team-col">
 <figure>
-	<img src="admin/<?php echo $res1['profile_photo'];?>" class="team-img">
+	<img src="admin/<?php echo $res1['profile_photo'];?>" class="img img-responsive team-img" style="margin-left:auto;margin-right:auto;">
 <figcaption>
-	<h3><?php echo $res1['name'];?></h3>
+	<h4 style="font-weight:700;"><?php echo $res1['name'];?></h4>
 <p class="post-text">
 <?php echo $res1['designation'];?>
 </p>

@@ -36,7 +36,7 @@ if($_SESSION['sid']=="")
 		$path = "product_images/" . $_FILES['image']['name'];
     	move_uploaded_file($_FILES['image']['tmp_name'], $path);
 	if ($_FILES['image']['tmp_name'] != '' ) {
-       		$query="INSERT INTO `products` (`id`,`image`,`name`,`brief`,`description`) VALUES ('','".$path."','".addslashes($name)."','".$brief."','".$description."')";
+       		$query="INSERT INTO `products` (`image`,`name`,`brief`,`description`) VALUES ('".$path."','".addslashes($name)."','".$brief."','".$description."')";
 			mysqli_query($dbcon,$query) or die(mysqli_error($dbcon));
 			$empty="File Uploaded Successfully";
     }	

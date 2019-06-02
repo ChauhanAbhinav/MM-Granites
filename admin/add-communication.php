@@ -23,7 +23,7 @@
 	extract($_POST);
 	if(isset($_POST['add_image']))
 	{
-       		$query="INSERT INTO `company_contacts`(`id`,`email`,`phone`,`fax`) VALUES ('','".$email."','".$phone."','".$fax."')";
+       		$query="INSERT INTO `company_contacts`(`email`,`phone`,`fax`) VALUES ('".$email."','".$phone."','".$fax."')";
 			mysqli_query($dbcon,$query) or die(mysqli_error($dbcon));
 			$empty="File Uploaded Successfully";
     }	
